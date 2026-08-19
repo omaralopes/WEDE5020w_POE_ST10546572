@@ -8,7 +8,117 @@ HTML foundation for The Burger Bar, a Durban-based mobile halal smash-burger bus
 ## Folders
 
 
-The current submission is HTML-only. Menu prices and direct contact details still need confirmation by the business before publication.
+## Project Overview
+
+This project involves the development of a comprehensive website for The Burger Bar, a Durban-based mobile eatery specialising in American-inspired smash burgers. The website will serve as the digital presence for this local brand, which is halal and known for taking the grill to the people, including trading at 246 Currie Road in Morningside.
+
+The Burger Bar website development project spans 12 weeks from 20 July 2026. This structured approach divides the work into three distinct phases, each building upon the previous foundation to create a comprehensive online presence for the business. Part 1 is due on 21 August 2026, Part 2 is due on 18 September 2026, and the Part 3 submission date is yet to be finalised.
+
+The development of this website addresses the current lack of online presence for The Burger Bar. Through research conducted on the brand's Facebook page and related public listings on 20 July 2026, comprehensive insights were gathered regarding business operations, customer needs, and website requirements. This information serves as the foundation for creating a digital platform that accurately represents the brand's values and offerings.
+
+The website showcases The Burger Bar's commitment to serving fresh, high-quality, American-inspired smash burgers that are halal, flavourful, and made to order, while bringing a fun, high-energy food experience to Durban and surrounding communities.
+
+## Website Goals and Objectives
+
+### Primary Goals
+
+The website has been designed to achieve several key business objectives:
+
+**Menu Accessibility:** Customers can view the complete menu online, providing convenient access to all available burgers, sides, and drinks without needing to rely on Facebook posts or phone calls for information.
+
+**Online Ordering Capability:** The platform enables customers to place orders directly through the website, streamlining the ordering process.
+
+**Enhanced Visibility:** The website increases brand awareness and online presence beyond Facebook, making The Burger Bar more discoverable to potential customers in Durban and surrounding areas.
+
+**Promotional Platform:** Special offers are prominently featured on a dedicated Promotions page to drive sales and customer engagement.
+
+### Key Performance Indicators
+
+The success of the website will be measured through several metrics:
+
+- Monthly website traffic to gauge overall reach and engagement
+- Number of online orders placed through the platform
+- Click-through rates on promotional banners to assess marketing effectiveness
+- Bounce rate analysis to evaluate user engagement and content relevance
+
+## Target Audience
+
+The website specifically caters to:
+
+- Local families and individuals residing in Durban
+- Students and young adults seeking convenient food options
+- Halaal diners
+- Event hosts looking for live burger stations
+- Smash-burger lovers across Durban
+
+## Key Features and Functionality
+
+### Essential Pages Structure
+
+The website comprises five main sections, each serving specific user needs:
+
+**Homepage (index.html):** Acts as the digital storefront featuring hero imagery with The Burger Bar branding, a brief introduction to the smash-burger brand, prominent calls to action for viewing the menu and promotions, a comprehensive navigation menu, featured smash-burger specials linking to the Promotions page, and footer contact information.
+
+**About Us (about.html):** Tells the brand's story, including its Durban roots and mobile smash-burger identity, mission and vision statements, information about halal, American-inspired smash-burger preparation, community values including the annual feeding project, and photographs of the grill station, pop-ups, and team.
+
+**Menu (menu.html):** Provides comprehensive product information organised into smash-burger categories, including classic, loaded, and plant-based options where available. It also includes detailed descriptions, drink options, extra items such as sides, extras and sauces, special deals with a link to the Promotions page, and allergen information where applicable.
+
+**Promotions (promotions.html):** Provides a dedicated space for highlighting current specials, including monthly burger specials and event information.
+
+**Contact (contact.html):** Offers communication channels including a contact form for general enquiries, the restaurant's location at 246 Currie Road, Morningside, Durban, a Google Maps link, social media information, and trading details.
+
+### Core Functionality
+
+**Mobile Responsiveness:** The website is prepared to adapt across smartphones, tablets, and desktop computers through responsive CSS planned for Part 2.
+
+**Location Integration:** A Google Maps link provides location information for the business.
+
+**Communication Tools:** A contact form enables direct customer enquiries, while social media integration connects customers to The Burger Bar's Facebook presence. Promotional information appears on the Promotions page.
+
+**User Experience Optimisation:** The design prioritises simplicity and efficiency, allowing visitors to view the menu, check current promotions, and find trading locations with minimal clicks, while maintaining high contrast for readability and consistent visual branding throughout all pages.
+
+## Technical Implementation
+
+Through the use of GitHub and VS Code, the website uses modern web technologies, including HTML5 for semantic structure, CSS for visual styling and responsive design, and JavaScript for interactive functionality. The current Part 1 submission focuses on the HTML5 foundation.
+
+Hosting is planned through Afrihost with the domain www.theburgerbardbn.co.za, ensuring reliable South African-based service. The technical architecture supports future scalability and maintenance requirements.
+
+## Content Strategy
+
+All website content has been developed through primary research, including The Burger Bar's Facebook page and related public listings accessed on 20 July 2026. Visual elements use legally sourced stock photography from Magnific, professional typography from Google Fonts, and carefully selected colour schemes from ColorHunt that reflect a grilled smash-burger experience, featuring Ketchup Red (#C62828), Bun Cream (#FFF8E1), Mustard Gold (#E09F3E), and Charcoal Black (#1A1A1A).
+
+The content strategy emphasises local Durban relevance while maintaining professional presentation standards that build customer trust and encourage future online ordering behaviour.
+
+## Development Timeline
+
+### Part 1: Foundation (Weeks 1-5)
+
+**Duration:** 20 July 2026 - 21 August 2026
+
+The initial phase focuses on establishing the groundwork for the entire project. During the first week, thorough research is conducted into the organisation's needs and the project proposal is submitted, while the GitHub repository and initial file structure are set up. Week two involves detailed content planning, including finalising the sitemap design, gathering and organising content materials, creating wireframes for all pages, and sourcing legal images and assets. The third and fourth weeks concentrate on HTML development, building the structural foundation for all five pages using semantic HTML tags and implementing a functional navigation system. The final week of this phase involves comprehensive testing, validation, updating README.md, and preparation for the first submission deadline on 21 August 2026.
+
+## Detailed Changelog
+
+### 19 August 2026
+
+- Created the initial five-page HTML website.
+- Added shared navigation and footer structures.
+- Added researched content for the organisation, menu, promotions and contact page.
+- Added HTML comments explaining the main page sections.
+- Added and updated the Part 1 README documentation.
+- Validated internal links, semantic landmarks and whitespace.
+
+## References
+
+Afrihost, 2026. Domains. [Online]. Available at: https://www.afrihost.com/domains. [Accessed on 20 July 2026].
+
+The Burger Bar, 2026. Facebook page. [Online]. Available at: https://www.facebook.com/theburgerbardbn. [Accessed on 20 July 2026].
+
+ColorHunt, n.d. Colour Palettes for Designers and Artists. [Online]. Available at: https://colorhunt.co. [Accessed on 20 July 2026].
+
+Magnific, n.d. Images. [Online]. Available at: https://www.magnific.com. [Accessed on 20 July 2026].
+
+Google Fonts, n.d. Free Fonts Library. [Online]. Available at: https://fonts.google.com. [Accessed on 20 July 2026].
 
 # The Burger Bar Website
 
