@@ -1,3 +1,12 @@
+# The Burger Bar Website
+
+## Student Information
+
+- **Student:** Omar A. Lopes
+- **Student number:** ST10546572
+- **Module:** Introduction to Web Development
+- **Module code:** WEDE5020w
+
 ## Project Overview
 
 This project involves the development of a comprehensive website for The Burger Bar, a Durban-based mobile eatery specialising in American-inspired smash burgers. The website will serve as the digital presence for this local brand, which is halal and known for taking the grill to the people, including trading at 246 Currie Road in Morningside.
@@ -86,57 +95,6 @@ The content strategy emphasises local Durban relevance while maintaining profess
 **Duration:** 20 July 2026 - 21 August 2026
 
 The initial phase focuses on establishing the groundwork for the entire project. During the first week, thorough research is conducted into the organisation's needs and the project proposal is submitted, while the GitHub repository and initial file structure are set up. Week two involves detailed content planning, including finalising the sitemap design, gathering and organising content materials, creating wireframes for all pages, and sourcing legal images and assets. The third and fourth weeks concentrate on HTML development, building the structural foundation for all five pages using semantic HTML tags and implementing a functional navigation system. The final week of this phase involves comprehensive testing, validation, updating README.md, and preparation for the first submission deadline on 21 August 2026.
-
-## References
-
-Afrihost, 2026. Domains. [Online]. Available at: https://www.afrihost.com/domains. [Accessed on 20 July 2026].
-
-The Burger Bar, 2026. Facebook page. [Online]. Available at: https://www.facebook.com/theburgerbardbn. [Accessed on 20 July 2026].
-
-ColorHunt, n.d. Colour Palettes for Designers and Artists. [Online]. Available at: https://colorhunt.co. [Accessed on 20 July 2026].
-
-Magnific, n.d. Images. [Online]. Available at: https://www.magnific.com. [Accessed on 20 July 2026].
-
-Google Fonts, n.d. Free Fonts Library. [Online]. Available at: https://fonts.google.com. [Accessed on 20 July 2026].
-
-# The Burger Bar Website
-
-## Student Information
-
-- **Student:** Omar A. Lopes
-- **Student number:** ST10546572
-- **Module:** Introduction to Web Development
-- **Module code:** WEDE5020w
-
-## Project Overview
-
-The Burger Bar is a Durban-based mobile eatery specialising in American-inspired halal smash burgers. The business takes the grill to local trading spots, including 246 Currie Road in Morningside, and also caters for live-station events.
-
-The website provides a central online home for the brand beyond Facebook. It introduces the organisation, presents the menu, highlights promotions, and gives customers a way to find the business and make contact. The website is aimed at local families, individuals, students, young adults, halaal diners, event hosts and smash-burger lovers in Durban and surrounding communities.
-
-## Website Goals and Objectives
-
-- Make the menu easy to view online.
-- Improve the business's online visibility beyond Facebook.
-- Promote specials and current trading updates.
-- Make it easy for customers to find the Durban trading location.
-- Support future online ordering and event enquiries.
-- Build trust through the business story, halal identity and clear contact information.
-
-## Key Features and Functionality
-
-- Five linked HTML pages: Home, About Us, Menu, Promotions and Contact.
-- Shared navigation menu on every page.
-- Semantic HTML structure using headers, navigation, main content, sections, articles and footers.
-- Menu categories for burgers, sides, sauces and drinks.
-- Promotions and live-station event information.
-- Contact form with name, email, subject and message fields.
-- Business address and Google Maps link for 246 Currie Road, Morningside, Durban.
-- Facebook link for current trading locations and announcements.
-- Responsive viewport metadata ready for future CSS styling.
-- Descriptive alternative text for images.
-
-Online ordering, form processing, CSS styling and JavaScript interactivity are planned for later project parts.
 
 ## File and Folder Structure
 
