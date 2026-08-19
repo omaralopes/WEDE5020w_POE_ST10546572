@@ -87,17 +87,6 @@ The content strategy emphasises local Durban relevance while maintaining profess
 
 The initial phase focuses on establishing the groundwork for the entire project. During the first week, thorough research is conducted into the organisation's needs and the project proposal is submitted, while the GitHub repository and initial file structure are set up. Week two involves detailed content planning, including finalising the sitemap design, gathering and organising content materials, creating wireframes for all pages, and sourcing legal images and assets. The third and fourth weeks concentrate on HTML development, building the structural foundation for all five pages using semantic HTML tags and implementing a functional navigation system. The final week of this phase involves comprehensive testing, validation, updating README.md, and preparation for the first submission deadline on 21 August 2026.
 
-## Detailed Changelog
-
-### 19 August 2026
-
-- Created the initial five-page HTML website.
-- Added shared navigation and footer structures.
-- Added researched content for the organisation, menu, promotions and contact page.
-- Added HTML comments explaining the main page sections.
-- Added and updated the Part 1 README documentation.
-- Validated internal links, semantic landmarks and whitespace.
-
 ## References
 
 Afrihost, 2026. Domains. [Online]. Available at: https://www.afrihost.com/domains. [Accessed on 20 July 2026].
@@ -221,16 +210,17 @@ Add researched Burger Bar content
 Update README and validate navigation
 ```
 
-## Changelog
+## Detailed Changelog
 
-### 19 August 2026
+### Part 1
 
-- Created the initial five-page HTML website.
-- Added shared navigation and footer structures.
-- Added researched content for the organisation, menu, promotions and contact page.
-- Added HTML comments explaining the main page sections.
-- Added the Part 1 README documentation.
-- Validated internal links, semantic landmarks and whitespace.
+**v1.0 - 19 Aug 2026:** Initial commit; created five HTML pages (`index.html`, `about.html`, `menu.html`, `promotions.html`, `contact.html`); added shared navigation and footer structures; added researched Burger Bar content; added menu categories for burgers, sides, sauces and drinks; added promotions and event information; added contact details, contact form and Google Maps link; added HTML comments explaining the main page sections; created the initial `README.md`.
+
+**v1.1 - 19 Aug 2026:** Added the project overview, goals, target audience, features, technical details, timeline, changelog and references to the README; removed the email address from the README.
+
+**v1.2 - 19 Aug 2026:** Removed the duplicate README title; removed the Pages heading; removed the Folders heading; removed the outdated HTML foundation text; removed the Navigation and Testing section.
+
+**v1.3 - 19 Aug 2026:** Pushed all changes to the GitHub repository.
 
 ## References
 
