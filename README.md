@@ -16,7 +16,6 @@ The current submission is HTML-only. Menu prices and direct contact details stil
 
 - **Student:** Omar
 - **Student number:** ST10546572
-- **Email:** ST10546572@rcconnect.edu.za
 - **Module:** Introduction to Web Development
 - **Module code:** WEDE5020w
 
