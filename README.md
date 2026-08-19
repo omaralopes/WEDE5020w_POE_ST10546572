@@ -14,7 +14,7 @@ The current submission is HTML-only. Menu prices and direct contact details stil
 
 ## Student Information
 
-- **Student:** Omar
+- **Student:** Omar A. Lopes
 - **Student number:** ST10546572
 - **Module:** Introduction to Web Development
 - **Module code:** WEDE5020w
