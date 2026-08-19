@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse The Burger Bar's smash burgers, sides, sauces and drinks.">
+    <meta name="description" content="Browse The Burger Bar's beef and chicken burgers, sides, drinks and mocktails.">
     <title>Menu | The Burger Bar</title>
 </head>
 <body>
@@ -24,50 +24,468 @@
     <!-- Menu content organised by category -->
     <main>
         <h1>Our menu</h1>
-        <p>Choose your favourite combination of fresh smash burgers, sides and drinks. Please ask our team about allergens and available options when ordering.</p>
+        <p>Choose your favourite combination of fresh burgers, sides and drinks. Please ask our team about allergens and available options when ordering.</p>
+        <p><a href="order.html">Order now</a></p>
 
-        <!-- Burger choices -->
+        <!-- Beef burger choices -->
         <section id="burgers">
-            <h2>Smash burgers</h2>
+            <h2>Beef Burgers</h2>
             <article>
-                <h3>The Classic</h3>
-                <p>A seasoned smash patty with melted cheese, fresh lettuce, tomato, onion and our house sauce in a toasted bun.</p>
-                <p>Price: To be confirmed</p>
+                <h3>Classic Beef Burger</h3>
+                <img src="images/classic-beef-burger.png" alt="Classic beef burger with melted cheese, lettuce and tomato on a sesame bun">
+                <p>Our signature flame-grilled beef patty served on a toasted bun with crisp lettuce, fresh tomato, and our secret house sauce. Pure, timeless perfection.</p>
+                <p>Price: R79</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Classic Beef Burger">
+                    <input type="hidden" name="price" value="R79">
+                    <p>
+                        <label for="qty-classic-beef-burger">Quantity</label>
+                        <input type="number" id="qty-classic-beef-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
             <article>
-                <h3>The Loaded</h3>
-                <p>A bold, loaded smash burger with extra cheese, crispy toppings and a generous drizzle of house sauce.</p>
-                <p>Price: To be confirmed</p>
+                <h3>Pickled Onion &amp; Cucumber Beef Burger</h3>
+                <img src="images/beef-burger-pickled-onions-cucumbers.png" alt="Beef burger with pickled onions, pickled cucumbers, cheese and lettuce">
+                <p>A savory flame-grilled beef patty elevated with the sharp crunch of tangy pickled onions and crisp, refreshing cucumbers to cut through the richness.</p>
+                <p>Price: R85</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Pickled Onion &amp; Cucumber Beef Burger">
+                    <input type="hidden" name="price" value="R85">
+                    <p>
+                        <label for="qty-pickled-onion-and-cucumber-beef-burger">Quantity</label>
+                        <input type="number" id="qty-pickled-onion-and-cucumber-beef-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
             <article>
-                <h3>Plant-based option</h3>
-                <p>A plant-based burger option where available. Ask the team about the current ingredients and preparation.</p>
-                <p>Price: To be confirmed</p>
+                <h3>Eggplant, Beef, Cheese &amp; Tomato Burger</h3>
+                <img src="images/eggplant-beef-cheese-tomato-burger.png" alt="Beef burger layered with grilled eggplant, melted cheese, tomato and lettuce">
+                <p>A gourmet fusion featuring a juicy beef patty layered with tender grilled eggplant, melted cheddar, fresh tomato, and a hint of garlic aioli.</p>
+                <p>Price: R95</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Eggplant, Beef, Cheese &amp; Tomato Burger">
+                    <input type="hidden" name="price" value="R95">
+                    <p>
+                        <label for="qty-eggplant-beef-cheese-and-tomato-burger">Quantity</label>
+                        <input type="number" id="qty-eggplant-beef-cheese-and-tomato-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Stacked Beef Burger</h3>
+                <img src="images/stacked-beef-burger.png" alt="Tall stacked double beef burger with cheese, salad and chips">
+                <p>Built for the serious appetite. Multiple layers of premium grilled beef, melted cheese, and fresh toppings stacked high for the ultimate bite.</p>
+                <p>Price: R119</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Stacked Beef Burger">
+                    <input type="hidden" name="price" value="R119">
+                    <p>
+                        <label for="qty-stacked-beef-burger">Quantity</label>
+                        <input type="number" id="qty-stacked-beef-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>The Loaded Mushroom &amp; Coleslaw Burger</h3>
+                <img src="images/meat-burger-coleslaw-cucumber-tomato-mushrooms-cheese.png" alt="Loaded beef burger with mushrooms, coleslaw, cucumber, tomato and cheese">
+                <p>An absolute feast. A juicy beef patty loaded with earthy sautéed mushrooms, creamy coleslaw, melted cheese, crisp cucumber, and fresh tomato.</p>
+                <p>Price: R99</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="The Loaded Mushroom &amp; Coleslaw Burger">
+                    <input type="hidden" name="price" value="R99">
+                    <p>
+                        <label for="qty-the-loaded-mushroom-and-coleslaw-burger">Quantity</label>
+                        <input type="number" id="qty-the-loaded-mushroom-and-coleslaw-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Mushroom &amp; Coleslaw Beef Burger</h3>
+                <img src="images/mushroom-coleslaw-beef-burger.png" alt="Beef burger topped with sautéed mushrooms, coleslaw, cheese and tomato">
+                <p>The perfect balance of textures featuring a savory grilled beef patty topped with warm, buttery sautéed mushrooms and a cool, crunchy layer of house coleslaw.</p>
+                <p>Price: R89</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Mushroom &amp; Coleslaw Beef Burger">
+                    <input type="hidden" name="price" value="R89">
+                    <p>
+                        <label for="qty-mushroom-and-coleslaw-beef-burger">Quantity</label>
+                        <input type="number" id="qty-mushroom-and-coleslaw-beef-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Seeded Beef Burger Duo</h3>
+                <img src="images/seeded-beef-burger-duo.png" alt="Two seeded bun beef burgers served together with chips">
+                <p>Double the flavor. Two perfectly sized, flame-grilled beef sliders served on soft, toasted artisanal seeded buns with classic trimmings.</p>
+                <p>Price: R109</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Seeded Beef Burger Duo">
+                    <input type="hidden" name="price" value="R109">
+                    <p>
+                        <label for="qty-seeded-beef-burger-duo">Quantity</label>
+                        <input type="number" id="qty-seeded-beef-burger-duo" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Charcoal Beef &amp; Macon Cheeseburger</h3>
+                <img src="images/charcoal-beef-and-macon-cheeseburger.png" alt="Charcoal bun beef cheeseburger with macon and chips">
+                <p>A showstopper. A juicy beef patty, smoky macon, and gooey melted cheese served on a dramatic, striking black activated charcoal bun.</p>
+                <p>Price: R115</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Charcoal Beef &amp; Macon Cheeseburger">
+                    <input type="hidden" name="price" value="R115">
+                    <p>
+                        <label for="qty-charcoal-beef-and-macon-cheeseburger">Quantity</label>
+                        <input type="number" id="qty-charcoal-beef-and-macon-cheeseburger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
         </section>
 
-        <!-- Sides and sauces -->
+        <!-- Chicken burger choices -->
+        <section id="chicken-burgers">
+            <h2>Chicken Burgers</h2>
+            <article>
+                <h3>Classic Chicken Burger</h3>
+                <img src="images/classic-chicken-burger.png" alt="Classic chicken cheeseburger with lettuce, tomato and sesame bun">
+                <p>Your choice of a tender grilled or golden-crisp fried chicken breast, served with fresh lettuce, tomato, and creamy mayo on a toasted bun.</p>
+                <p>Price: R75</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Classic Chicken Burger">
+                    <input type="hidden" name="price" value="R75">
+                    <p>
+                        <label for="qty-classic-chicken-burger">Quantity</label>
+                        <input type="number" id="qty-classic-chicken-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Chicken Burger with Chips</h3>
+                <img src="images/chicken-burger-with-chips.png" alt="Chicken burger served with a side of herb-seasoned chips">
+                <p>Our succulent classic chicken burger paired with a generous side of golden, crispy fries for the ultimate complete meal.</p>
+                <p>Price: R95</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Chicken Burger with Chips">
+                    <input type="hidden" name="price" value="R95">
+                    <p>
+                        <label for="qty-chicken-burger-with-chips">Quantity</label>
+                        <input type="number" id="qty-chicken-burger-with-chips" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Mega Chicken Burger</h3>
+                <img src="images/mega-chicken-burger.png" alt="Large chicken burger held with a skewer, served with ketchup">
+                <p>Go big or go home. An extra-large, extra-juicy chicken fillet piled high with fresh toppings and a double helping of our signature sauce.</p>
+                <p>Price: R109</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Mega Chicken Burger">
+                    <input type="hidden" name="price" value="R109">
+                    <p>
+                        <label for="qty-mega-chicken-burger">Quantity</label>
+                        <input type="number" id="qty-mega-chicken-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Bagel Chicken Burger</h3>
+                <img src="images/bagel-chicken-burger.png" alt="Chicken burger served on a seeded bagel-style bun with lettuce">
+                <p>A delightful twist on a classic. A tender chicken fillet served with fresh greens and creamy spread inside a chewy, toasted artisanal bagel.</p>
+                <p>Price: R85</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Bagel Chicken Burger">
+                    <input type="hidden" name="price" value="R85">
+                    <p>
+                        <label for="qty-bagel-chicken-burger">Quantity</label>
+                        <input type="number" id="qty-bagel-chicken-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Sweet &amp; Spicy Chicken Burger</h3>
+                <img src="images/sweet-and-spicy-chicken-burger.png" alt="Sweet and spicy chicken burger served with fries">
+                <p>The perfect flavor contrast. A crispy chicken breast glazed in a sticky, sweet-and-spicy chili sauce, balanced with cool, crunchy lettuce.</p>
+                <p>Price: R89</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Sweet &amp; Spicy Chicken Burger">
+                    <input type="hidden" name="price" value="R89">
+                    <p>
+                        <label for="qty-sweet-and-spicy-chicken-burger">Quantity</label>
+                        <input type="number" id="qty-sweet-and-spicy-chicken-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Charcoal Chicken Burger</h3>
+                <img src="images/charcoal-chicken-burger.png" alt="Chicken burger served in a black charcoal bun">
+                <p>Turn heads with a tender, juicy chicken breast and vibrant toppings served inside our signature, visually stunning black charcoal bun.</p>
+                <p>Price: R99</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Charcoal Chicken Burger">
+                    <input type="hidden" name="price" value="R99">
+                    <p>
+                        <label for="qty-charcoal-chicken-burger">Quantity</label>
+                        <input type="number" id="qty-charcoal-chicken-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Double Chicken &amp; Macon Cheeseburger</h3>
+                <img src="images/double-chicken-and-macon-cheeseburger.png" alt="Double chicken burger with macon, cheese and chips">
+                <p>A towering masterpiece featuring two tender chicken fillets, smoky macon, and melted cheese, all layered together in one epic burger.</p>
+                <p>Price: R119</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Double Chicken &amp; Macon Cheeseburger">
+                    <input type="hidden" name="price" value="R119">
+                    <p>
+                        <label for="qty-double-chicken-and-macon-cheeseburger">Quantity</label>
+                        <input type="number" id="qty-double-chicken-and-macon-cheeseburger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+        </section>
+
+        <!-- Beef and chicken combo -->
+        <section id="combo">
+            <h2>Beef and Chicken Combo</h2>
+            <article>
+                <h3>Classic Beef &amp; Classic Chicken Burgers</h3>
+                <img src="images/classic-beef-and-classic-chicken-burgers.png" alt="Classic beef burger and classic chicken burger served side by side">
+                <p>Can’t decide? Get the best of both worlds with this ultimate duo featuring one classic beef slider and one classic chicken slider.</p>
+                <p>Price: R125</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Classic Beef &amp; Classic Chicken Burgers">
+                    <input type="hidden" name="price" value="R125">
+                    <p>
+                        <label for="qty-classic-beef-and-classic-chicken-burgers">Quantity</label>
+                        <input type="number" id="qty-classic-beef-and-classic-chicken-burgers" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+        </section>
+
+        <!-- Sides -->
         <section id="sides">
-            <h2>Sides and sauces</h2>
-            <ul>
-                <li>Loaded chips</li>
-                <li>Classic chips</li>
-                <li>Extra cheese</li>
-                <li>House sauces</li>
-            </ul>
-            <p>Prices and availability may change with the trading location.</p>
+            <h2>Sides</h2>
+            <article>
+                <h3>Skinny Fries</h3>
+                <img src="images/skinny-fries.png" alt="Skinny fries in a paper cone with ketchup">
+                <p>Vibrant, shoestring-cut golden potatoes fried to crisp perfection and lightly tossed in fine sea salt.</p>
+                <p>Price: R35</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Skinny Fries">
+                    <input type="hidden" name="price" value="R35">
+                    <p>
+                        <label for="qty-skinny-fries">Quantity</label>
+                        <input type="number" id="qty-skinny-fries" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Spicy Slap Chips</h3>
+                <img src="images/spicy-slap-chips.png" alt="Spicy slap chips piled on a plate">
+                <p>Traditional, soft-style local slap chips drenched in vinegar and dusted with a bold, fiery blend of spices.</p>
+                <p>Price: R32</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Spicy Slap Chips">
+                    <input type="hidden" name="price" value="R32">
+                    <p>
+                        <label for="qty-spicy-slap-chips">Quantity</label>
+                        <input type="number" id="qty-spicy-slap-chips" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Potato Wedges</h3>
+                <img src="images/potato-wedges.png" alt="Herb-seasoned potato wedges with dipping sauce">
+                <p>Thick-cut, fluffy potato wedges seasoned with a rustic blend of herbs and spices, baked and fried for a perfect crunch.</p>
+                <p>Price: R38</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Potato Wedges">
+                    <input type="hidden" name="price" value="R38">
+                    <p>
+                        <label for="qty-potato-wedges">Quantity</label>
+                        <input type="number" id="qty-potato-wedges" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Sweet Potato Fries</h3>
+                <img src="images/sweet-potato-fries.png" alt="Roasted sweet potato fries with chilli flakes and dip">
+                <p>Crispy, golden sweet potato strips offering a naturally sweet flavor with a satisfyingly savory crunch.</p>
+                <p>Price: R42</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Sweet Potato Fries">
+                    <input type="hidden" name="price" value="R42">
+                    <p>
+                        <label for="qty-sweet-potato-fries">Quantity</label>
+                        <input type="number" id="qty-sweet-potato-fries" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
         </section>
 
-        <!-- Drinks -->
+        <!-- Drinks and mocktails -->
         <section id="drinks">
-            <h2>Drinks</h2>
-            <ul>
-                <li>Bottled water</li>
-                <li>Juice</li>
-                <li>Soft drinks</li>
-            </ul>
+            <h2>Drinks &amp; Mocktails</h2>
+            <article>
+                <h3>Soda</h3>
+                <img src="images/soda.png" alt="Glasses of colourful soda with ice">
+                <p>A refreshing, ice-cold selection of your favorite classic fizzy soft drinks.</p>
+                <p>Price: R22</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Soda">
+                    <input type="hidden" name="price" value="R22">
+                    <p>
+                        <label for="qty-soda">Quantity</label>
+                        <input type="number" id="qty-soda" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Chia-Infused Sparkling Kombucha</h3>
+                <img src="images/chia-infused-sparkling-kombucha.png" alt="Bottles of chia-infused sparkling kombucha with tropical fruit">
+                <p>A health-forward, fizzy fermented tea packed with gut-friendly probiotics and superfood chia seeds for a unique texture.</p>
+                <p>Price: R48</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Chia-Infused Sparkling Kombucha">
+                    <input type="hidden" name="price" value="R48">
+                    <p>
+                        <label for="qty-chia-infused-sparkling-kombucha">Quantity</label>
+                        <input type="number" id="qty-chia-infused-sparkling-kombucha" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Still Water</h3>
+                <img src="images/still-water.png" alt="Glass carafe of still water infused with herbs">
+                <p>Pure, crisp, and perfectly chilled natural spring water to cleanse the palate.</p>
+                <p>Price: R18</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Still Water">
+                    <input type="hidden" name="price" value="R18">
+                    <p>
+                        <label for="qty-still-water">Quantity</label>
+                        <input type="number" id="qty-still-water" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Red Martini Mocktail</h3>
+                <img src="images/red-martini-mocktail.png" alt="Red martini mocktail in a martini glass with lemon zest garnish">
+                <p>A sophisticated, alcohol-free blend of tart cranberry, aromatic botanicals, and a sharp twist of citrus, served elegant and chilled.</p>
+                <p>Price: R49</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Red Martini Mocktail">
+                    <input type="hidden" name="price" value="R49">
+                    <p>
+                        <label for="qty-red-martini-mocktail">Quantity</label>
+                        <input type="number" id="qty-red-martini-mocktail" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Spiced Autumn Apple Mocktail</h3>
+                <img src="images/spiced-autumn-apple-mocktail.png" alt="Spiced autumn apple mocktail with cinnamon stick and dried orange">
+                <p>Cozy flavors in a glass featuring crisp apple cider infused with warm cinnamon, cloves, and a touch of fresh lemon juice.</p>
+                <p>Price: R49</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Spiced Autumn Apple Mocktail">
+                    <input type="hidden" name="price" value="R49">
+                    <p>
+                        <label for="qty-spiced-autumn-apple-mocktail">Quantity</label>
+                        <input type="number" id="qty-spiced-autumn-apple-mocktail" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Mermaid Lagoon Mocktail</h3>
+                <img src="images/mermaid-lagoon-mocktail.png" alt="Blue mermaid lagoon mocktail garnished with apple slices">
+                <p>A magical, vibrant blue elixir combining tropical blue curaçao syrup, tart lime juice, and a splash of refreshing lemonade.</p>
+                <p>Price: R52</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Mermaid Lagoon Mocktail">
+                    <input type="hidden" name="price" value="R52">
+                    <p>
+                        <label for="qty-mermaid-lagoon-mocktail">Quantity</label>
+                        <input type="number" id="qty-mermaid-lagoon-mocktail" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
+            <article>
+                <h3>Ruby Lemon Sparkle Mocktail</h3>
+                <img src="images/ruby-lemon-sparkle-mocktail.png" alt="Ruby red lemon sparkle mocktail with citrus peel garnish">
+                <p>A brilliant red refresher balancing sweet pomegranate and raspberry syrups with the sharp, zesty fizz of fresh lemonade.</p>
+                <p>Price: R52</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Ruby Lemon Sparkle Mocktail">
+                    <input type="hidden" name="price" value="R52">
+                    <p>
+                        <label for="qty-ruby-lemon-sparkle-mocktail">Quantity</label>
+                        <input type="number" id="qty-ruby-lemon-sparkle-mocktail" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
+            </article>
         </section>
 
+        <p>Prices are in South African Rand and may change with the trading location.</p>
+        <p><a href="order.html">Order now</a></p>
         <p>For orders and current availability, follow <a href="https://www.facebook.com/theburgerbardbn">The Burger Bar on Facebook</a>.</p>
     </main>
 

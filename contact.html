@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact The Burger Bar in Durban about orders, trading locations and event bookings.">
+    <meta name="description" content="Contact The Burger Bar in Durban about orders and trading locations.">
     <title>Contact | The Burger Bar</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
     <!-- Contact details and enquiry form -->
     <main>
         <h1>Contact us</h1>
-        <p>Have a question about the menu, a trading location or an event booking? Send us a message.</p>
+        <p>Have a question about the menu or a trading location? Send us a message.</p>
 
         <!-- Business location and social links -->
         <section>
@@ -36,7 +36,20 @@
                 Durban, KwaZulu-Natal
             </address>
             <p>Trading locations may vary. Follow our Facebook page for the latest updates.</p>
-            <p><a href="https://www.google.com/maps/search/?api=1&amp;query=246+Currie+Road+Morningside+Durban">Open location in Google Maps</a></p>
+            <iframe
+                src="https://maps.google.com/maps?q=246+Currie+Road,+Morningside,+Durban&amp;z=16&amp;output=embed"
+                width="600"
+                height="400"
+                title="Map showing The Burger Bar at 246 Currie Road, Morningside, Durban"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+            <p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=246+Currie+Road+Morningside+Durban">Open in Google Maps</a>
+                |
+                <a href="https://maps.apple.com/?q=246+Currie+Road,+Morningside,+Durban">Open in Apple Maps</a>
+            </p>
             <p><a href="https://www.facebook.com/theburgerbardbn">The Burger Bar on Facebook</a></p>
         </section>
 
@@ -60,16 +73,11 @@
                     <label for="message">Message</label><br>
                     <textarea id="message" name="message" rows="7" cols="50" required></textarea>
                 </p>
-                <p><button type="submit">Submit enquiry</button></p>
+                <p><button type="submit">Submit</button></p>
             </form>
         </section>
-
-        <!-- Event booking information -->
-        <section>
-            <h2>Event bookings</h2>
-            <p>Tell us about your event, preferred date and expected number of guests. We will get back to you about a live burger station.</p>
-        </section>
     </main>
+
 
     <!-- Shared business information and social link -->
     <footer>

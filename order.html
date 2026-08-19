@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order smash burgers, sides and drinks from The Burger Bar in Durban.">
+    <title>Order | The Burger Bar</title>
+</head>
+<body>
+    <!-- Site header and main navigation -->
+    <header>
+        <p><a href="index.html">The Burger Bar</a></p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Online order form -->
+    <main>
+        <h1>Order now</h1>
+        <p>Place an order for collection or delivery. We will confirm availability for your trading location.</p>
+        <section>
+            <h2>Cart</h2>
+            <p>Use Add to cart on the menu or promotions pages to send an item here. Your chosen item, price and quantity will appear in the page address. You can also choose an item in the form below.</p>
+        </section>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Customer details</legend>
+                <p>
+                    <label for="order-name">Name and surname</label><br>
+                    <input type="text" id="order-name" name="order-name" required>
+                </p>
+                <p>
+                    <label for="order-phone">Phone number</label><br>
+                    <input type="tel" id="order-phone" name="order-phone" required>
+                </p>
+                <p>
+                    <label for="order-email">Email address</label><br>
+                    <input type="email" id="order-email" name="order-email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Menu selection</legend>
+                <p>
+                    <label for="order-item">Choose an item</label><br>
+                    <select id="order-item" name="order-item" required>
+                        <option value="">Select a burger, side or drink</option>
+                        <optgroup label="Current specials">
+                            <option value="seeded-beef-burger-duo">Seeded Beef Burger Duo — R129</option>
+                            <option value="chicken-burger-with-chips">Chicken Burger with Chips — R89</option>
+                            <option value="stacked-beef-burger">Stacked Beef Burger — R139</option>
+                        </optgroup>
+                        <optgroup label="Beef burgers">
+                            <option value="classic-beef-burger">Classic Beef Burger — R79</option>
+                            <option value="pickled-onion-cucumber-beef">Pickled Onion &amp; Cucumber Beef Burger — R85</option>
+                            <option value="eggplant-beef-cheese-tomato">Eggplant, Beef, Cheese &amp; Tomato Burger — R95</option>
+                            <option value="loaded-mushroom-coleslaw">The Loaded Mushroom &amp; Coleslaw Burger — R99</option>
+                            <option value="mushroom-coleslaw-beef">Mushroom &amp; Coleslaw Beef Burger — R89</option>
+                            <option value="charcoal-beef-macon">Charcoal Beef &amp; Macon Cheeseburger — R115</option>
+                        </optgroup>
+                        <optgroup label="Chicken burgers">
+                            <option value="classic-chicken-burger">Classic Chicken Burger — R75</option>
+                            <option value="mega-chicken-burger">Mega Chicken Burger — R109</option>
+                            <option value="bagel-chicken-burger">Bagel Chicken Burger — R85</option>
+                            <option value="sweet-spicy-chicken">Sweet &amp; Spicy Chicken Burger — R89</option>
+                            <option value="charcoal-chicken-burger">Charcoal Chicken Burger — R99</option>
+                            <option value="double-chicken-macon">Double Chicken &amp; Macon Cheeseburger — R119</option>
+                        </optgroup>
+                        <optgroup label="Combo">
+                            <option value="classic-beef-chicken-combo">Classic Beef &amp; Classic Chicken Burgers — R125</option>
+                        </optgroup>
+                        <optgroup label="Sides">
+                            <option value="skinny-fries">Skinny Fries — R35</option>
+                            <option value="spicy-slap-chips">Spicy Slap Chips — R32</option>
+                            <option value="potato-wedges">Potato Wedges — R38</option>
+                            <option value="sweet-potato-fries">Sweet Potato Fries — R42</option>
+                        </optgroup>
+                        <optgroup label="Drinks and mocktails">
+                            <option value="soda">Soda — R22</option>
+                            <option value="kombucha">Chia-Infused Sparkling Kombucha — R48</option>
+                            <option value="still-water">Still Water — R18</option>
+                            <option value="red-martini-mocktail">Red Martini Mocktail — R49</option>
+                            <option value="spiced-autumn-apple">Spiced Autumn Apple Mocktail — R49</option>
+                            <option value="mermaid-lagoon">Mermaid Lagoon Mocktail — R52</option>
+                            <option value="ruby-lemon-sparkle">Ruby Lemon Sparkle Mocktail — R52</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="order-quantity">Quantity</label><br>
+                    <input type="number" id="order-quantity" name="order-quantity" min="1" max="20" value="1" required>
+                </p>
+                <p>
+                    <label for="order-notes">Cart notes</label><br>
+                    <textarea id="order-notes" name="order-notes" rows="5" cols="50" placeholder="Add extra items, sauce requests or collection notes."></textarea>
+                </p>
+            </fieldset>
+
+            <p><button type="submit">Submit now</button></p>
+        </form>
+
+        <p><a href="menu.html">View the full menu</a> | <a href="promotions.html">Back to promotions</a></p>
+    </main>
+
+    <!-- Shared business information and social link -->
+    <footer>
+        <h2>The Burger Bar</h2>
+        <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+        <p><a href="contact.html">Contact us</a> | <a href="https://www.facebook.com/theburgerbardbn">Facebook</a></p>
+        <p>&copy; 2026 The Burger Bar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

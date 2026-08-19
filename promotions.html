@@ -21,30 +21,63 @@
         </nav>
     </header>
 
-    <!-- Promotions and event information -->
+    <!-- Promotions information -->
     <main>
         <h1>Promotions</h1>
-        <p>Good burgers are even better as a special. Check this page and our Facebook page for current offers and pop-up updates.</p>
+        <p>Good burgers are even better as a special. Check this page and our Facebook page for current offers and trading updates.</p>
 
         <!-- Current specials -->
         <section>
             <h2>Current specials</h2>
             <article>
-                <h3>Smash burger special</h3>
-                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A smash burger ready to be served">
-                <p>Look out for a monthly burger special featuring fresh ingredients and big grill flavour.</p>
-                <p>Price: To be confirmed</p>
+                <h3>Seeded Beef Burger Duo</h3>
+                <img src="images/seeded-beef-burger-duo.png" alt="Two seeded bun beef burgers served together with chips">
+                <p>Double the flavor. Two perfectly sized, flame-grilled beef sliders served on soft, toasted artisanal seeded buns with classic trimmings, paired with a side of our golden, crispy fries.</p>
+                <p>Price: R129</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Seeded Beef Burger Duo">
+                    <input type="hidden" name="price" value="R129">
+                    <p>
+                        <label for="qty-promo-seeded-beef-burger-duo">Quantity</label>
+                        <input type="number" id="qty-promo-seeded-beef-burger-duo" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
             <article>
-                <h3>Combo deal</h3>
-                <p>Pair a smash burger with chips and a cold drink for a satisfying meal.</p>
-                <p>Price: To be confirmed</p>
+                <h3>Chicken Burger with Chips</h3>
+                <img src="images/chicken-burger-with-chips.png" alt="Chicken burger served with a side of herb-seasoned chips">
+                <p>Our succulent classic chicken burger, featuring a tender breast and fresh toppings, paired with a generous side of golden, crispy fries for the ultimate complete meal.</p>
+                <p>Price: R89</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Chicken Burger with Chips">
+                    <input type="hidden" name="price" value="R89">
+                    <p>
+                        <label for="qty-promo-chicken-burger-with-chips">Quantity</label>
+                        <input type="number" id="qty-promo-chicken-burger-with-chips" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
             <article>
-                <h3>Live-station events</h3>
-                <p>Planning a gathering? Ask about bringing The Burger Bar grill to your event.</p>
-                <p>Follow our Facebook page for event booking updates.</p>
+                <h3>Stacked Beef Burger</h3>
+                <img src="images/stacked-beef-burger.png" alt="Tall stacked double beef burger with cheese, salad and chips">
+                <p>Built for the serious appetite. Multiple layers of premium grilled beef, melted cheese, and fresh toppings stacked high, served alongside a heap of our hot, crispy fries.</p>
+                <p>Price: R139</p>
+                <form action="order.html" method="get">
+                    <input type="hidden" name="item" value="Stacked Beef Burger">
+                    <input type="hidden" name="price" value="R139">
+                    <p>
+                        <label for="qty-promo-stacked-beef-burger">Quantity</label>
+                        <input type="number" id="qty-promo-stacked-beef-burger" name="quantity" min="1" max="20" value="1">
+                    </p>
+                    <p><button type="submit">Add to cart</button></p>
+                </form>
+
             </article>
+            <p><a href="order.html">Order now</a></p>
         </section>
 
         <!-- Social media update information -->
