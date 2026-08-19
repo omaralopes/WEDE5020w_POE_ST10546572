@@ -1,13 +1,3 @@
-# The Burger Bar website
-
-HTML foundation for The Burger Bar, a Durban-based mobile halal smash-burger business.
-
-## Pages
-
-
-## Folders
-
-
 ## Project Overview
 
 This project involves the development of a comprehensive website for The Burger Bar, a Durban-based mobile eatery specialising in American-inspired smash burgers. The website will serve as the digital presence for this local brand, which is halal and known for taking the grill to the people, including trading at 246 Currie Road in Morningside.
