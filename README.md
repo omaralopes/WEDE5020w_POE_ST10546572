@@ -211,20 +211,6 @@ Home (index.html)
 	└── Event booking information
 ```
 
-## Navigation and Testing
-
-The navigation uses relative HTML links and appears consistently on every page. The `aria-current` attribute identifies the page currently being viewed.
-
-Completed checks:
-
-- Confirmed all five HTML pages contain `header`, `nav`, `main` and `footer` elements.
-- Confirmed internal navigation targets exist.
-- Confirmed obsolete `products.html` and `enquiry.html` references are absent.
-- Confirmed the HTML files are consistently indented and `git diff --check` reports no whitespace errors.
-- Confirmed the HTML-only pages can be opened as static files without a build step.
-
-Before final publication, the pages should also be opened and checked in current versions of Safari, Chrome and Firefox at desktop and mobile viewport sizes. Form submission and remote image availability should be checked once the final backend and local image assets are selected.
-
 ## GitHub Repository
 
 The project is prepared for a private GitHub repository. The lecturer's repository link or access instructions are still required before the remote can be connected. Commits should use descriptive messages, for example:
