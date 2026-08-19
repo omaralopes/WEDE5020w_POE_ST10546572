@@ -46,8 +46,6 @@ The website specifically caters to:
 
 - Local families and individuals residing in Durban
 - Students and young adults seeking convenient food options
-- Halaal diners
-- Event hosts looking for live burger stations
 - Smash-burger lovers across Durban
 
 ## Key Features and Functionality
