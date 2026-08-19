@@ -178,6 +178,24 @@ Update README and validate navigation
 
 **v1.3 - 19 Aug 2026:** Pushed all changes to the GitHub repository.
 
+**v1.4 - 19 Aug 2026:** Added local images to the `images/` folder using kebab-case file names for the logo, hero image, owners, staff, beef burgers, chicken burgers, combo, sides, drinks and mocktails.
+
+**v1.5 - 19 Aug 2026:** Updated `menu.html` with the full beef, chicken, combo, sides, and drinks and mocktails menu; added matching image tags, descriptions and South African Rand prices.
+
+**v1.6 - 19 Aug 2026:** Updated `promotions.html` with three burger-and-chips specials, local images, combo prices, Add to cart forms and an Order now link to `order.html`.
+
+**v1.7 - 19 Aug 2026:** Added an embedded Google Map on `contact.html` for 246 Currie Road, Morningside, Durban, plus Open in Google Maps and Open in Apple Maps links; added a Submit button after the message field.
+
+**v1.8 - 19 Aug 2026:** Updated `index.html` with the local hero image, a homepage tagline and an Order now link to `menu.html`.
+
+**v1.9 - 19 Aug 2026:** Updated `about.html` to match the About Us wireframe with business history, mission, vision, halal preparation and a Meet the team section for owners Amber Smith and Abel Khan and staff, including owner and staff images.
+
+**v1.10 - 19 Aug 2026:** Created `order.html` with customer details, menu selection, quantity, cart notes and a Submit now button.
+
+**v1.11 - 19 Aug 2026:** Added HTML-only Add to cart forms with quantity fields on all menu products and promotional food specials; added Order now links to `order.html` on `menu.html`.
+
+**v1.12 - 19 Aug 2026:** Removed event catering, live-station booking and annual feeding-project content from `index.html`, `about.html`, `promotions.html` and `contact.html`.
+
 ## References
 
 - The Burger Bar, 2026. Facebook page. Available at: https://www.facebook.com/theburgerbardbn (Accessed 20 July 2026).
