@@ -20,7 +20,7 @@ The website showcases The Burger Bar's commitment to serving fresh, high-quality
 ## Website Goals and Objectives
 
 ### Primary Goals
-
+ 
 The website has been designed to achieve several key business objectives:
 
 **Menu Accessibility:** Customers can view the complete menu online, providing convenient access to all available burgers, sides, and drinks without needing to rely on Facebook posts or phone calls for information.
