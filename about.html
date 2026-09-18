@@ -6,85 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about The Burger Bar's Durban roots, halal identity, team and smash-burger mission.">
     <title>About Us | The Burger Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Site header and main navigation -->
-    <header>
-        <p><a href="index.html">The Burger Bar</a></p>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="promotions.html">Promotions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="site-wrap">
+            <div class="brand">
+                <a href="index.html">
+                    <img
+                        src="./images/the-burger-bar-logo.jpg"
+                        srcset="./images/responsive/the-burger-bar-logo-480w.jpg 480w,
+                                ./images/responsive/the-burger-bar-logo-800w.jpg 800w,
+                                ./images/the-burger-bar-logo.jpg 1024w"
+                        sizes="48px"
+                        alt="The Burger Bar logo">
+                </a>
+                <div class="brand-text">
+                    <a class="brand-name" href="index.html">The Burger Bar</a>
+                    <span class="brand-tagline">Halal smash burgers, Durban</span>
+                </div>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- About page content -->
     <main>
-        <h1>About us</h1>
-        <p>The story of how The Burger Bar came to be, and the people who keep the grill going in Durban.</p>
+        <div class="site-wrap page-intro">
+            <h1>About us</h1>
+            <p>The story of how The Burger Bar came to be, and the people who keep the grill going in Durban.</p>
+        </div>
 
         <!-- Business history, mission and vision -->
-        <section>
+        <section class="site-wrap">
             <h2>Who we are</h2>
-            <article>
-                <h3>Business history</h3>
-                <p>The Burger Bar started as a Durban mobile eatery with a simple idea: take American-inspired smash burgers to the people. Since 2016 we have been trading at local spots such as 246 Currie Road in Morningside.</p>
-                <p>We built the brand on the grill, not on a sit-down dining room. That mobile identity still shapes everything we do, from weekday cravings to busy trading days across Durban.</p>
-            </article>
-            <article>
-                <h3>Mission statement</h3>
-                <p>To serve fresh, high-quality, American-inspired smash burgers that are halal, flavourful and made to order, while bringing a fun, high-energy food experience to Durban and surrounding communities.</p>
-            </article>
-            <article>
-                <h3>Vision statement</h3>
-                <p>To become KwaZulu-Natal's most loved smash-burger brand by remaining excellent on the grill, easy to find online and available for everyday cravings.</p>
-            </article>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3>Business history</h3>
+                    <p>The Burger Bar started as a Durban mobile eatery with a simple idea: take American-inspired smash burgers to the people. Since 2016 we have been trading at local spots such as 246 Currie Road in Morningside.</p>
+                    <p>We built the brand on the grill, not on a sit-down dining room. That mobile identity still shapes everything we do, from weekday cravings to busy trading days across Durban.</p>
+                </article>
+                <article class="about-card">
+                    <h3>Mission statement</h3>
+                    <p>To serve fresh, high-quality, American-inspired smash burgers that are halal, flavourful and made to order, while bringing a fun, high-energy food experience to Durban and surrounding communities.</p>
+                </article>
+                <article class="about-card">
+                    <h3>Vision statement</h3>
+                    <p>To become KwaZulu-Natal's most loved smash-burger brand by remaining excellent on the grill, easy to find online and available for everyday cravings.</p>
+                </article>
+            </div>
         </section>
 
         <!-- Halal and preparation information -->
-        <section>
-            <h2>Halal smash-burger preparation</h2>
-            <p>Every burger is prepared with halal-certified ingredients. Our beef and chicken are sourced from trusted suppliers, and we keep preparation on the grill clear and consistent so families, students and halaal diners can order with confidence.</p>
-            <p>Burgers are smashed and cooked to order. We toast the buns, layer fresh toppings and finish each burger with house sauces. If you have an allergen concern, please ask the team when you order.</p>
+        <section class="site-wrap">
+            <div class="halal-block">
+                <div>
+                    <h2>Halal smash-burger preparation</h2>
+                </div>
+                <div>
+                    <p>Every burger is prepared with halal-certified ingredients. Our beef and chicken are sourced from trusted suppliers, and we keep preparation on the grill clear and consistent so families, students and halaal diners can order with confidence.</p>
+                    <p>Burgers are smashed and cooked to order. We toast the buns, layer fresh toppings and finish each burger with house sauces. If you have an allergen concern, please ask the team when you order.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Team: owners and staff -->
-        <section>
+        <section class="site-wrap team-section">
             <h2>Meet the team</h2>
             <p>The Burger Bar is a small Durban crew with a big grill. Here are the people behind the smash.</p>
 
-            <article>
-                <h3>Owners</h3>
-                <img src="./images/owners.jpg" alt="The Burger Bar owners Amber Smith and Abel Khan">
-                <h4>Amber Smith</h4>
-                <p>Co-owner and brand lead. Amber grew up around Durban food markets and brought that energy to The Burger Bar in 2016. She shapes the menu, monthly specials and the look of the brand at 246 Currie Road.</p>
-                <h4>Abel Khan</h4>
-                <p>Co-owner and head of the grill. Abel is the smash specialist behind every beef and chicken patty. He works with trusted halal suppliers, trains the team on the station and keeps every burger hot and made to order at 246 Currie Road.</p>
-            </article>
+            <div class="team-grid">
+                <article class="team-card">
+                    <img
+                        src="./images/owners.jpg"
+                        srcset="./images/responsive/owners-480w.jpg 480w,
+                                ./images/responsive/owners-800w.jpg 800w,
+                                ./images/owners.jpg 1024w"
+                        sizes="(max-width: 48rem) 100vw, 50vw"
+                        alt="The Burger Bar owners Amber Smith and Abel Khan"
+                        width="1024"
+                        height="683">
+                    <div class="team-card-body">
+                        <h3>Owners</h3>
+                        <div class="team-member">
+                            <h4>Amber Smith</h4>
+                            <p>Co-owner and brand lead. Amber grew up around Durban food markets and brought that energy to The Burger Bar in 2016. She shapes the menu, monthly specials and the look of the brand at 246 Currie Road.</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>Abel Khan</h4>
+                            <p>Co-owner and head of the grill. Abel is the smash specialist behind every beef and chicken patty. He works with trusted halal suppliers, trains the team on the station and keeps every burger hot and made to order at 246 Currie Road.</p>
+                        </div>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Staff</h3>
-                <img src="./images/staff.jpg" alt="The Burger Bar kitchen staff in chef jackets, smiling in a professional kitchen">
-                <h4>Thando Dlamini</h4>
-                <p>Senior grill cook. Thando runs the smash station during busy service and makes sure every patty hits the bun hot and well seasoned.</p>
-                <h4>Lindiwe Naidoo</h4>
-                <p>Front-of-house and orders. Lindiwe welcomes customers, keeps the sides moving and helps with orders on trading days.</p>
-                <h4>Jason Botha</h4>
-                <p>Prep and sauces. Jason handles bun toasting, house sauces and the topping station so the line stays fast without losing flavour.</p>
-            </article>
+                <article class="team-card">
+                    <img
+                        src="./images/staff.jpg"
+                        srcset="./images/responsive/staff-480w.jpg 480w,
+                                ./images/responsive/staff-800w.jpg 800w,
+                                ./images/staff.jpg 1024w"
+                        sizes="(max-width: 48rem) 100vw, 50vw"
+                        alt="The Burger Bar kitchen staff in chef jackets, smiling in a professional kitchen"
+                        width="1024"
+                        height="683">
+                    <div class="team-card-body">
+                        <h3>Staff</h3>
+                        <div class="team-member">
+                            <h4>Thando Dlamini</h4>
+                            <p>Senior grill cook. Thando runs the smash station during busy service and makes sure every patty hits the bun hot and well seasoned.</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>Lindiwe Naidoo</h4>
+                            <p>Front-of-house and orders. Lindiwe welcomes customers, keeps the sides moving and helps with orders on trading days.</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>Jason Botha</h4>
+                            <p>Prep and sauces. Jason handles bun toasting, house sauces and the topping station so the line stays fast without losing flavour.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
     <!-- Shared business information and social link -->
-    <footer>
-        <h2>The Burger Bar</h2>
-        <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
-        <p><a href="https://www.facebook.com/theburgerbardbn">Follow us on Facebook</a></p>
-        <p>&copy; 2026 The Burger Bar. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="site-wrap">
+            <div>
+                <h2>The Burger Bar</h2>
+                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/theburgerbardbn">Follow us on Facebook</a></p>
+                <p class="footer-meta">&copy; 2026 The Burger Bar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

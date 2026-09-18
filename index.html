@@ -6,58 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Burger Bar serves halal American-inspired smash burgers in Durban and surrounding communities.">
     <title>The Burger Bar | Durban Smash Burgers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Site header and main navigation -->
-    <header>
-        <p><a href="index.html">The Burger Bar</a></p>
-        <p>Halal smash burgers, made fresh in Durban.</p>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="promotions.html">Promotions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="site-wrap">
+            <div class="brand">
+                <a href="index.html">
+                    <img
+                        src="./images/the-burger-bar-logo.jpg"
+                        srcset="./images/responsive/the-burger-bar-logo-480w.jpg 480w,
+                                ./images/responsive/the-burger-bar-logo-800w.jpg 800w,
+                                ./images/the-burger-bar-logo.jpg 1024w"
+                        sizes="48px"
+                        alt="The Burger Bar logo">
+                </a>
+                <div class="brand-text">
+                    <a class="brand-name" href="index.html">The Burger Bar</a>
+                    <span class="brand-tagline">Halal smash burgers, Durban</span>
+                </div>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Homepage content and calls to action -->
     <main>
-        <!-- Hero introduction -->
-        <section>
-            <img src="./images/hero-image.jpg" alt="A stacked cheeseburger with lettuce, tomato and sesame bun">
-            <h1>Big flavour. Fresh off the grill.</h1>
-            <p>Halal smash burgers, smashed to order and taken to the people of Durban.</p>
-            <p><a href="menu.html">Order now</a></p>
+        <!-- Hero introduction: full-bleed image with brand headline -->
+        <section class="hero">
+            <div class="hero-media">
+                <picture>
+                    <source
+                        media="(max-width: 48rem)"
+                        srcset="./images/responsive/hero-image-480w.jpg">
+                    <source
+                        media="(max-width: 64rem)"
+                        srcset="./images/responsive/hero-image-800w.jpg">
+                    <img
+                        src="./images/hero-image.jpg"
+                        srcset="./images/responsive/hero-image-480w.jpg 480w,
+                                ./images/responsive/hero-image-800w.jpg 800w,
+                                ./images/hero-image.jpg 1024w"
+                        sizes="100vw"
+                        alt="A stacked cheeseburger with lettuce, tomato and sesame bun"
+                        width="1024"
+                        height="682">
+                </picture>
+            </div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">The Burger Bar</p>
+                <h1>Big flavour. Fresh off the grill.</h1>
+                <p>Halal smash burgers, smashed to order and taken to the people of Durban.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="menu.html">Order now</a>
+                    <a class="btn btn-secondary" href="promotions.html">See specials</a>
+                </div>
+            </div>
         </section>
 
         <!-- Menu category shortcuts -->
-        <section>
-            <h2>Find your next favourite</h2>
-            <p>From classic smash burgers to loaded sides and cold drinks, there is something for every Durban craving.</p>
-            <ul>
-                <li><a href="menu.html#burgers">Smash burgers</a></li>
-                <li><a href="menu.html#sides">Sides and sauces</a></li>
-                <li><a href="menu.html#drinks">Drinks</a></li>
-            </ul>
+        <section class="home-strip">
+            <div class="site-wrap">
+                <div>
+                    <h2>Find your next favourite</h2>
+                    <p>From classic smash burgers to loaded sides and cold drinks, there is something for every Durban craving.</p>
+                </div>
+                <ul class="category-list">
+                    <li><a href="menu.html#burgers">Smash burgers</a></li>
+                    <li><a href="menu.html#sides">Sides and sauces</a></li>
+                    <li><a href="menu.html#drinks">Drinks</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- Link to current specials -->
-        <section>
-            <h2>What's happening on the grill?</h2>
-            <p>Keep an eye on our latest specials and trading locations.</p>
-            <p><a href="promotions.html">See current promotions</a></p>
+        <section class="promo-banner">
+            <div class="site-wrap">
+                <div>
+                    <h2>What's happening on the grill?</h2>
+                    <p>Keep an eye on our latest specials and trading locations.</p>
+                </div>
+                <a class="btn btn-gold" href="promotions.html">See current promotions</a>
+            </div>
         </section>
     </main>
 
     <!-- Shared business information and social link -->
-    <footer>
-        <h2>Visit The Burger Bar</h2>
-        <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
-        <p><a href="https://www.facebook.com/theburgerbardbn">Facebook</a> | <a href="contact.html">Contact details</a></p>
-        <p>&copy; 2026 The Burger Bar. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="site-wrap">
+            <div>
+                <h2>Visit The Burger Bar</h2>
+                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+            </div>
+            <div>
+                <p><a href="https://www.facebook.com/theburgerbardbn">Facebook</a> | <a href="contact.html">Contact details</a></p>
+                <p class="footer-meta">&copy; 2026 The Burger Bar. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

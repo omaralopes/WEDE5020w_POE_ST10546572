@@ -47,44 +47,63 @@ The website specifically caters to:
 - Local families and individuals residing in Durban
 - Students and young adults seeking convenient food options
 - Smash-burger lovers across Durban
+- Halaal diners looking for trusted preparation information
 
 ## Key Features and Functionality
 
 ### Essential Pages Structure
 
-The website comprises five main sections, each serving specific user needs:
+**Homepage (index.html):** Full-bleed hero with The Burger Bar branding, short brand introduction, calls to action for ordering and specials, category shortcuts into the menu, and footer contact information.
 
-**Homepage (index.html):** Acts as the digital storefront featuring hero imagery with The Burger Bar branding, a brief introduction to the smash-burger brand, prominent calls to action for viewing the menu and promotions, a comprehensive navigation menu, featured smash-burger specials linking to the Promotions page, and footer contact information.
+**About Us (about.html):** Brand history, mission and vision, halal preparation information, and Meet the team content for owners and staff with local images.
 
-**About Us (about.html):** Tells the brand's story, including its Durban roots and mobile smash-burger identity, mission and vision statements, information about halal, American-inspired smash-burger preparation, community values including the annual feeding project, and photographs of the grill station, pop-ups, and team.
+**Menu (menu.html):** Beef burgers, chicken burgers, combo, sides, and drinks organised in a responsive product grid with prices, quantity fields, and Add to cart forms linking to `order.html`.
 
-**Menu (menu.html):** Provides comprehensive product information organised into smash-burger categories, including classic, loaded, and plant-based options where available. It also includes detailed descriptions, drink options, extra items such as sides, extras and sauces, special deals with a link to the Promotions page, and allergen information where applicable.
+**Promotions (promotions.html):** Current burger-and-chips specials with images, prices, Add to cart forms, and an Order now link.
 
-**Promotions (promotions.html):** Provides a dedicated space for highlighting current specials, including monthly burger specials and event information.
+**Contact (contact.html):** Location details for 246 Currie Road, Morningside, embedded Google Map, Apple Maps and Google Maps links, Facebook link, and a contact enquiry form.
 
-**Contact (contact.html):** Offers communication channels including a contact form for general enquiries, the restaurant's location at 246 Currie Road, Morningside, Durban, a Google Maps link, social media information, and trading details.
+**Order (order.html):** Customer details, menu selection, quantity, cart notes, and submit action for collection or delivery requests.
 
 ### Core Functionality
 
-**Mobile Responsiveness:** The website is prepared to adapt across smartphones, tablets, and desktop computers through responsive CSS planned for Part 2.
+**Mobile Responsiveness:** CSS media queries, relative units (`rem`, `%`), and responsive images adapt the layout across desktop, tablet, and mobile breakpoints.
 
-**Location Integration:** A Google Maps link provides location information for the business.
+**Location Integration:** Embedded Google Map plus Open in Google Maps and Open in Apple Maps links.
 
-**Communication Tools:** A contact form enables direct customer enquiries, while social media integration connects customers to The Burger Bar's Facebook presence. Promotional information appears on the Promotions page.
+**Communication Tools:** Contact form for enquiries and Facebook social link for trading updates.
 
-**User Experience Optimisation:** The design prioritises simplicity and efficiency, allowing visitors to view the menu, check current promotions, and find trading locations with minimal clicks, while maintaining high contrast for readability and consistent visual branding throughout all pages.
+**Ordering Path:** HTML-only Add to cart forms pass selected item, price, and quantity to `order.html` via the query string.
 
 ## Technical Implementation
 
-Through the use of GitHub and VS Code, the website uses modern web technologies, including HTML5 for semantic structure, CSS for visual styling and responsive design, and JavaScript for interactive functionality. The current Part 1 submission focuses on the HTML5 foundation.
+The website uses HTML5 for semantic structure, an external CSS stylesheet for visual styling and responsive design, and a reserved JavaScript folder for Part 3 interactivity. Part 2 focuses on desktop styling, Flexbox/Grid layouts, typography, visual interaction states, and responsive behaviour.
 
-Hosting is planned through Afrihost with the domain www.theburgerbardbn.co.za, ensuring reliable South African-based service. The technical architecture supports future scalability and maintenance requirements.
+Hosting is planned through Afrihost with the domain www.theburgerbardbn.co.za.
+
+### Design system (from proposal)
+
+| Token | Value | Use |
+| --- | --- | --- |
+| Ketchup Red | `#C62828` | Primary buttons, prices, active accents |
+| Bun Cream | `#FFF8E1` | Page background |
+| Mustard Gold | `#E09F3E` | Header accent line, secondary buttons, highlights |
+| Charcoal Black | `#1A1A1A` | Header, footer, body text contrast |
+| Playfair Display | Google Fonts | Headings |
+| Open Sans | Google Fonts | Body text, navigation, forms |
+
+### Responsive breakpoints
+
+| Breakpoint | Approx. width | Layout behaviour |
+| --- | --- | --- |
+| Desktop | above `64rem` (~1024px) | Multi-column grids (3-up menu), horizontal sticky nav |
+| Tablet | `40.01rem` to `64rem` (~641px–1024px) | Two-column product grids, stacked section layouts |
+| Mobile | `40rem` and below (~640px) | Single-column content, compact 2-column nav grid |
+| Small phones | `30rem` and below (~480px) | Single-column navigation |
 
 ## Content Strategy
 
 All website content has been developed through primary research, including The Burger Bar's Facebook page and related public listings accessed on 20 July 2026. Visual elements use legally sourced stock photography from Magnific, professional typography from Google Fonts, and carefully selected colour schemes from ColorHunt that reflect a grilled smash-burger experience, featuring Ketchup Red (#C62828), Bun Cream (#FFF8E1), Mustard Gold (#E09F3E), and Charcoal Black (#1A1A1A).
-
-The content strategy emphasises local Durban relevance while maintaining professional presentation standards that build customer trust and encourage future online ordering behaviour.
 
 ## Development Timeline
 
@@ -92,7 +111,19 @@ The content strategy emphasises local Durban relevance while maintaining profess
 
 **Duration:** 20 July 2026 - 21 August 2026
 
-The initial phase focuses on establishing the groundwork for the entire project. During the first week, thorough research is conducted into the organisation's needs and the project proposal is submitted, while the GitHub repository and initial file structure are set up. Week two involves detailed content planning, including finalising the sitemap design, gathering and organising content materials, creating wireframes for all pages, and sourcing legal images and assets. The third and fourth weeks concentrate on HTML development, building the structural foundation for all five pages using semantic HTML tags and implementing a functional navigation system. The final week of this phase involves comprehensive testing, validation, updating README.md, and preparation for the first submission deadline on 21 August 2026.
+HTML structure, researched content, navigation, images, forms, and README documentation.
+
+### Part 2: CSS Styling and Responsive Design (Weeks 6-9)
+
+**Duration:** 24 August 2026 - 18 September 2026
+
+External stylesheet, CSS reset, typography scale, Flexbox/Grid desktop layouts, hover/focus/active states, media queries, relative units, responsive images (`srcset` / `picture`), screenshot evidence, and README updates.
+
+### Part 3: Interactivity and SEO (Weeks 10-12)
+
+**Duration:** 21 September 2026 - 05 October 2026
+
+JavaScript interactivity, form behaviour, SEO improvements, and final testing.
 
 ## File and Folder Structure
 
@@ -102,42 +133,75 @@ the-burger-bar/
 ├── about.html
 ├── menu.html
 ├── promotions.html
+├── order.html
 ├── contact.html
 ├── css/
+│   └── style.css
 ├── js/
-└── images/
+├── images/
+│   ├── responsive/          # 480w and 800w image variants for srcset
+│   └── screenshots/         # Responsive testing evidence for Part 2
+└── README.md
 ```
 
-- `css/` is reserved for Part 2 styling.
-- `js/` is reserved for Part 3 functionality.
-- `images/` is reserved for locally stored, legally sourced images.
+## Part 2 Details
 
-## Timeline and Milestones
+Part 2 delivers the visual design and responsive behaviour for the website:
 
-| Week | Start date | Milestone | Phase | Key deliverables |
-| --- | --- | --- | --- | --- |
-| 1 | 20 July 2026 | Project initiation and research | Part 1 | Submit proposal, research the organisation and create the initial structure. |
-| 2 | 27 July 2026 | Content planning and sitemap | Part 1 | Finalise sitemap, gather content, create wireframes and source legal assets. |
-| 3 | 03 August 2026 | HTML foundation development | Part 1 | Create semantic HTML pages, navigation, content and images. |
-| 4 | 10 August 2026 | HTML refinement and validation | Part 1 | Complete HTML, test links, validate structure and improve formatting. |
-| 5 | 17 August 2026 | Final HTML testing and submission | Part 1 | Complete testing, update README and submit Part 1 by 21 August 2026. |
-| 6-9 | 24 August-18 September 2026 | CSS foundation, layout and responsive design | Part 2 | Add styling, Grid/Flexbox layouts, responsive breakpoints and visual refinement. |
-| 10-12 | 21 September-05 October 2026 | JavaScript, SEO and final testing | Part 3 | Add interactivity, form functionality, SEO improvements and final testing. |
+- External stylesheet `css/style.css` linked from every HTML page.
+- CSS reset and shared base styles for fonts, colours, spacing, and links.
+- Typography using Playfair Display (headings) and Open Sans (body), with a rem-based type scale.
+- Desktop layouts built with Flexbox (header, hero actions, forms) and CSS Grid (menu products, about cards, team, contact/order split).
+- Visual styling using the proposal palette, borders, soft shadows on hover, and interactive `:hover`, `:focus`, and `:active` states on navigation, buttons, and form controls.
+- Media queries for desktop, tablet, and mobile, switching multi-column layouts to single column on smaller screens.
+- Relative units (`rem`, `%`) for typography, spacing, and fluid widths.
+- Responsive images using `srcset`, `sizes`, and the `picture` element on key pages, with resized assets in `images/responsive/`.
+- Browser developer tools and headless Chrome used to test and capture desktop, tablet, and mobile screenshots.
 
-## Part 1 Details
+## Responsive Screenshot Evidence
 
-Part 1 establishes the HTML foundation for the website. It includes:
+Screenshots were captured at three viewport sizes using Chrome DevTools-style window sizes and are stored in `images/screenshots/`.
 
-- Research-based content about The Burger Bar.
-- A five-page website based on the approved sitemap.
-- Semantic HTML5 structure on every page.
-- Working internal navigation links across all pages.
-- Menu, promotions, business information and contact content.
-- Accessible labels for form fields and alternative text for images.
-- HTML comments explaining the main code sections.
-- A README documenting the project and its current stage.
+### Desktop (1440 x 900)
 
-Part 2 will add CSS styling, the colour palette, typography, layouts and responsive design. Part 3 will add JavaScript interactivity, form processing, SEO improvements and advanced features.
+| Page | File |
+| --- | --- |
+| Home | `images/screenshots/desktop-home.png` |
+| Menu | `images/screenshots/desktop-menu.png` |
+| Contact | `images/screenshots/desktop-contact.png` |
+
+![Desktop homepage](images/screenshots/desktop-home.png)
+
+![Desktop menu](images/screenshots/desktop-menu.png)
+
+### Tablet (768 x 1024)
+
+| Page | File |
+| --- | --- |
+| Home | `images/screenshots/tablet-home.png` |
+| Menu | `images/screenshots/tablet-menu.png` |
+
+![Tablet homepage](images/screenshots/tablet-home.png)
+
+![Tablet menu](images/screenshots/tablet-menu.png)
+
+### Mobile (390 x 844)
+
+| Page | File |
+| --- | --- |
+| Home | `images/screenshots/mobile-home.png` |
+| Menu | `images/screenshots/mobile-menu.png` |
+| Contact | `images/screenshots/mobile-contact.png` |
+
+![Mobile homepage](images/screenshots/mobile-home.png)
+
+![Mobile menu](images/screenshots/mobile-menu.png)
+
+### Device notes from testing
+
+- **Desktop:** Sticky charcoal header, full-bleed hero, three-column menu grid, side-by-side contact map and form.
+- **Tablet:** Two-column product cards, stacked homepage sections, horizontal navigation with wrapping where needed.
+- **Mobile:** Compact navigation grid, stacked hero CTAs, single-column menu cards, full-width form controls.
 
 ## Sitemap
 
@@ -149,21 +213,22 @@ Home (index.html)
 │   ├── Sides and sauces section
 │   └── Drinks section
 ├── Promotions (promotions.html)
+├── Order Online (order.html)
 └── Contact (contact.html)
 	├── Business address
-	├── Google Maps link
+	├── Google Maps embed and links
 	├── Contact form
-	└── Event booking information
+	└── Facebook link
 ```
 
 ## GitHub Repository
 
-The project is prepared for a private GitHub repository. The lecturer's repository link or access instructions are still required before the remote can be connected. Commits should use descriptive messages, for example:
+Commits should use descriptive messages, for example:
 
 ```text
-Create Part 1 semantic HTML pages
-Add researched Burger Bar content
-Update README and validate navigation
+Add Part 2 external stylesheet and link all pages
+Implement responsive Grid and Flexbox layouts
+Update README with Part 2 screenshots and changelog
 ```
 
 ## Detailed Changelog
@@ -196,6 +261,36 @@ Update README and validate navigation
 
 **v1.12 - 19 Aug 2026:** Removed event catering, live-station booking and annual feeding-project content from `index.html`, `about.html`, `promotions.html` and `contact.html`.
 
+### Part 1 feedback corrections (applied during Part 2)
+
+**v1.13 - 18 Sep 2026:** Standardised the shared header across all pages so every page now includes the logo, brand name, and consistent Durban tagline (Part 1 pages previously used inconsistent header markup, with only the homepage carrying a tagline).
+
+**v1.14 - 18 Sep 2026:** Added the logo image to the site header on every page to strengthen brand recognition and match the proposal wireframe expectation of clear Burger Bar identity in the navigation area.
+
+**v1.15 - 18 Sep 2026:** Wrapped page content in consistent layout containers (`site-wrap`, section classes) so structural markup is ready for cascading CSS without duplicating large amounts of inline or page-specific styling.
+
+**v1.16 - 18 Sep 2026:** Improved semantic grouping on About, Menu, Promotions, Contact and Order pages (for example product card bodies, team cards, enquiry form and contact layout) so styles can cascade from a small set of reusable class selectors.
+
+### Part 2
+
+**v2.0 - 18 Sep 2026:** Created external stylesheet `css/style.css` and linked it from `index.html`, `about.html`, `menu.html`, `promotions.html`, `order.html` and `contact.html`.
+
+**v2.1 - 18 Sep 2026:** Implemented a CSS reset and base styles covering box-sizing, default margins, image behaviour, form inheritance, body typography, and the proposal colour tokens as CSS custom properties.
+
+**v2.2 - 18 Sep 2026:** Applied typography styles with Google Fonts (Playfair Display for headings, Open Sans for body), including font-size scale, font-weight, line-height and letter-spacing hierarchy from H1 through body and button text.
+
+**v2.3 - 18 Sep 2026:** Built desktop layouts with Flexbox (sticky header, brand block, hero actions, product forms) and CSS Grid (menu product grids, about cards, team grid, contact/order two-column layouts, homepage category and promo sections).
+
+**v2.4 - 18 Sep 2026:** Added visual styling for colours, backgrounds, borders and soft hover elevation; implemented interactive `:hover`, `:focus` and `:active` states on navigation links, primary/secondary buttons, category links and form fields.
+
+**v2.5 - 18 Sep 2026:** Implemented responsive design with media-query breakpoints for desktop, tablet and mobile; switched three-column layouts to two columns on tablet and one column on phones; adjusted navigation, font sizes and spacing for smaller screens using `rem` and `%`.
+
+**v2.6 - 18 Sep 2026:** Generated 480w and 800w image variants in `images/responsive/` and applied `srcset`/`sizes` (and `picture` on the homepage hero) so browsers can request appropriate image resolutions.
+
+**v2.7 - 18 Sep 2026:** Tested layouts in browser developer tools / Chrome at 1440x900 (desktop), 768x1024 (tablet) and 390x844 (mobile); saved screenshot evidence under `images/screenshots/` and documented findings in this README.
+
+**v2.8 - 18 Sep 2026:** Updated this README with Part 2 details, design system, breakpoint table, screenshot gallery, expanded changelog and refreshed references.
+
 ## References
 
 - The Burger Bar, 2026. Facebook page. Available at: https://www.facebook.com/theburgerbardbn (Accessed 20 July 2026).
@@ -203,3 +298,8 @@ Update README and validate navigation
 - ColorHunt, n.d. Colour palettes for designers and artists. Available at: https://colorhunt.co (Accessed 20 July 2026).
 - Google Fonts, n.d. Free fonts library. Available at: https://fonts.google.com (Accessed 20 July 2026).
 - Magnific, n.d. Images. Available at: https://www.magnific.com (Accessed 20 July 2026).
+- Mozilla Developer Network (MDN), n.d. Using media queries. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (Accessed 18 September 2026).
+- Mozilla Developer Network (MDN), n.d. Responsive images. Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images (Accessed 18 September 2026).
+- Mozilla Developer Network (MDN), n.d. CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout (Accessed 18 September 2026).
+- Mozilla Developer Network (MDN), n.d. Flexbox. Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox (Accessed 18 September 2026).
+- W3C, n.d. Cascading Style Sheets. Available at: https://www.w3.org/Style/CSS/ (Accessed 18 September 2026).
