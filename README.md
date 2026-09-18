@@ -15,7 +15,7 @@ The Burger Bar website development project spans 12 weeks from 20 July 2026. Thi
 
 The development of this website addresses the current lack of online presence for The Burger Bar. Through research conducted on the brand's Facebook page and related public listings on 20 July 2026, comprehensive insights were gathered regarding business operations, customer needs, and website requirements. This information serves as the foundation for creating a digital platform that accurately represents the brand's values and offerings.
 
-The website showcases The Burger Bar's commitment to serving fresh, high-quality, American-inspired smash burgers that are halal, flavourful, and made to order, while bringing a fun, high-energy food experience to Durban and surrounding communities.
+The website showcases The Burger Bar's commitment to serving fresh, high-quality, American-inspired smash burgers that are halal, flavourful, and made to order, while bringing a fun, high-energy food experience to Durban and surrounding communities. 
 
 ## Website Goals and Objectives
 
