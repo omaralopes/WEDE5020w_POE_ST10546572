@@ -81,7 +81,7 @@ The website uses HTML5 for semantic structure, an external CSS stylesheet for vi
 
 Hosting is planned through Afrihost with the domain www.theburgerbardbn.co.za.
 
-### Design system (from proposal)
+### Design system
 
 | Token | Value | Use |
 | --- | --- | --- |
@@ -152,56 +152,33 @@ Part 2 delivers the visual design and responsive behaviour for the website:
 - CSS reset and shared base styles for fonts, colours, spacing, and links.
 - Typography using Playfair Display (headings) and Open Sans (body), with a rem-based type scale.
 - Desktop layouts built with Flexbox (header, hero actions, forms) and CSS Grid (menu products, about cards, team, contact/order split).
-- Visual styling using the proposal palette, borders, soft shadows on hover, and interactive `:hover`, `:focus`, and `:active` states on navigation, buttons, and form controls.
+- Visual styling using the brand colour palette, borders, soft shadows on hover, and interactive `:hover`, `:focus`, and `:active` states on navigation, buttons, and form controls.
 - Media queries for desktop, tablet, and mobile, switching multi-column layouts to single column on smaller screens.
 - Relative units (`rem`, `%`) for typography, spacing, and fluid widths.
 - Responsive images using `srcset`, `sizes`, and the `picture` element on key pages, with resized assets in `images/responsive/`.
 - Browser developer tools and headless Chrome used to test and capture desktop, tablet, and mobile screenshots.
 
-## Responsive Screenshot Evidence
+## Responsiveness Testing and Iteration Across Devices
 
-Screenshots were captured at three viewport sizes using Chrome DevTools-style window sizes and are stored in `images/screenshots/`.
+These screenshots show how the site responds on common devices after iterative testing and adjustments.
 
-### Desktop (1440 x 900)
+### Mobile
 
-| Page | File |
-| --- | --- |
-| Home | `images/screenshots/desktop-home.png` |
-| Menu | `images/screenshots/desktop-menu.png` |
-| Contact | `images/screenshots/desktop-contact.png` |
+**iPhone**
 
-![Desktop homepage](images/screenshots/desktop-home.png)
+![The Burger Bar on iPhone (mobile)](images/iphone-responsiveness.png)
 
-![Desktop menu](images/screenshots/desktop-menu.png)
+### Tablet
 
-### Tablet (768 x 1024)
+**iPad**
 
-| Page | File |
-| --- | --- |
-| Home | `images/screenshots/tablet-home.png` |
-| Menu | `images/screenshots/tablet-menu.png` |
+![The Burger Bar on iPad (tablet)](images/ipad-responsiveness.png)
 
-![Tablet homepage](images/screenshots/tablet-home.png)
+### Desktop
 
-![Tablet menu](images/screenshots/tablet-menu.png)
+**MacBook Pro**
 
-### Mobile (390 x 844)
-
-| Page | File |
-| --- | --- |
-| Home | `images/screenshots/mobile-home.png` |
-| Menu | `images/screenshots/mobile-menu.png` |
-| Contact | `images/screenshots/mobile-contact.png` |
-
-![Mobile homepage](images/screenshots/mobile-home.png)
-
-![Mobile menu](images/screenshots/mobile-menu.png)
-
-### Device notes from testing
-
-- **Desktop:** Sticky charcoal header, full-bleed hero, three-column menu grid, side-by-side contact map and form.
-- **Tablet:** Two-column product cards, stacked homepage sections, horizontal navigation with wrapping where needed.
-- **Mobile:** Compact navigation grid, stacked hero CTAs, single-column menu cards, full-width form controls.
+![The Burger Bar on MacBook Pro (desktop)](images/macbook-responsiveness.png)
 
 ## Sitemap
 
@@ -265,7 +242,7 @@ Update README with Part 2 screenshots and changelog
 
 **v1.13 - 18 Sep 2026:** Standardised the shared header across all pages so every page now includes the logo, brand name, and consistent Durban tagline (Part 1 pages previously used inconsistent header markup, with only the homepage carrying a tagline).
 
-**v1.14 - 18 Sep 2026:** Added the logo image to the site header on every page to strengthen brand recognition and match the proposal wireframe expectation of clear Burger Bar identity in the navigation area.
+**v1.14 - 18 Sep 2026:** Added the logo image to the site header on every page to strengthen brand recognition and strengthen clear Burger Bar identity in the navigation area.
 
 **v1.15 - 18 Sep 2026:** Wrapped page content in consistent layout containers (`site-wrap`, section classes) so structural markup is ready for cascading CSS without duplicating large amounts of inline or page-specific styling.
 
@@ -275,7 +252,7 @@ Update README with Part 2 screenshots and changelog
 
 **v2.0 - 18 Sep 2026:** Created external stylesheet `css/style.css` and linked it from `index.html`, `about.html`, `menu.html`, `promotions.html`, `order.html` and `contact.html`.
 
-**v2.1 - 18 Sep 2026:** Implemented a CSS reset and base styles covering box-sizing, default margins, image behaviour, form inheritance, body typography, and the proposal colour tokens as CSS custom properties.
+**v2.1 - 18 Sep 2026:** Implemented a CSS reset and base styles covering box-sizing, default margins, image behaviour, form inheritance, body typography, and brand colour tokens as CSS custom properties.
 
 **v2.2 - 18 Sep 2026:** Applied typography styles with Google Fonts (Playfair Display for headings, Open Sans for body), including font-size scale, font-weight, line-height and letter-spacing hierarchy from H1 through body and button text.
 
@@ -287,9 +264,19 @@ Update README with Part 2 screenshots and changelog
 
 **v2.6 - 18 Sep 2026:** Generated 480w and 800w image variants in `images/responsive/` and applied `srcset`/`sizes` (and `picture` on the homepage hero) so browsers can request appropriate image resolutions.
 
-**v2.7 - 18 Sep 2026:** Tested layouts in browser developer tools / Chrome at 1440x900 (desktop), 768x1024 (tablet) and 390x844 (mobile); saved screenshot evidence under `images/screenshots/` and documented findings in this README.
+**v2.7 - 18 Sep 2026:** Tested layouts across devices and documented responsiveness evidence in the README under Responsiveness Testing and Iteration Across Devices, using device-frame screenshots for iPhone (mobile), iPad (tablet) and MacBook Pro (desktop) stored as `images/iphone-responsiveness.png`, `images/ipad-responsiveness.png` and `images/macbook-responsiveness.png`.
 
-**v2.8 - 18 Sep 2026:** Updated this README with Part 2 details, design system, breakpoint table, screenshot gallery, expanded changelog and refreshed references.
+**v2.8 - 18 Sep 2026:** Updated this README with Part 2 details, design system, breakpoint table, expanded changelog and refreshed references.
+
+**v2.9 - 18 Sep 2026:** Changed Add to cart behaviour so customers stay on `menu.html` or `promotions.html` while adding items; cart items are stored locally and a sticky cart bar shows item count with Keep browsing and Checkout actions. The full checkout form on `order.html` only appears after the customer chooses Checkout when they are done adding items.
+
+**v2.10 - 18 Sep 2026:** Updated `order.html` into a checkout page that lists cart contents, lets customers continue shopping via Add more items, and only reveals customer details once the cart has items.
+
+**v2.11 - 18 Sep 2026:** Added quantity controls on checkout (`−`, number field and `+`) so customers can increase or reduce quantities without removing a whole line; decreasing to zero removes that item. Remove and Clear cart remain available.
+
+**v2.12 - 18 Sep 2026:** Added cart totals: each checkout line shows a subtotal, a Cart total block shows the full amount in Rand, and the sticky cart bar on menu/promotions also shows a running total while browsing.
+
+**v2.13 - 18 Sep 2026:** Added `js/cart.js` and linked it from `menu.html`, `promotions.html` and `order.html` to power stay-on-page cart updates, checkout quantity editing and live total calculations.
 
 ## References
 

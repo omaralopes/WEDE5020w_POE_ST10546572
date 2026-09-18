@@ -1,8 +1,4 @@
-/* =========================================================
-   The Burger Bar — style.css
-   Part 2: Desktop styling + responsive design
-   Palette from proposal: Ketchup Red, Bun Cream, Mustard Gold, Charcoal
-   ========================================================= */
+/* The Burger Bar — style.css */
 
 /* ---------- CSS reset (consistent cross-browser base) ---------- */
 *,
@@ -963,8 +959,189 @@ main a.btn-gold:focus {
   letter-spacing: 0.04em;
 }
 
-.stack-gap {
-  margin-top: var(--space-4);
+.cart-tray {
+  position: sticky;
+  bottom: 0;
+  z-index: 90;
+  background: var(--charcoal);
+  color: var(--bun-cream);
+  border-top: 0.2rem solid var(--mustard);
+  padding: var(--space-3) 0;
+  box-shadow: 0 -0.5rem 1.5rem rgba(26, 26, 26, 0.25);
+}
+
+.cart-tray[hidden] {
+  display: none !important;
+}
+
+.cart-tray-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.cart-tray-summary {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: rgba(255, 248, 225, 0.9);
+  max-width: none;
+}
+
+.cart-tray-actions .btn,
+#clear-cart {
+  box-shadow: none;
+}
+
+#clear-cart {
+  margin-left: var(--space-2);
+  vertical-align: middle;
+}
+
+body.has-cart-tray {
+  padding-bottom: 0;
+}
+
+.cart-list {
+  list-style: none;
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.cart-line {
+  display: grid;
+  grid-template-columns: 1.4fr auto auto auto;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-3);
+  background: var(--paper);
+  border: 0.1rem solid var(--line);
+}
+
+.cart-line-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.cart-line-info strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+.cart-line-price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ketchup);
+}
+
+.cart-qty {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bun-cream);
+  border: 0.1rem solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.2rem;
+}
+
+.cart-qty-btn {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--charcoal);
+  background: var(--paper);
+  border: 0.1rem solid var(--line);
+  border-radius: var(--radius);
+}
+
+.cart-qty-btn:hover,
+.cart-qty-btn:focus {
+  border-color: var(--mustard);
+  color: var(--ketchup);
+  outline: none;
+}
+
+.cart-qty-input {
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  border: 0.1rem solid transparent;
+  background: transparent;
+  font-weight: 700;
+}
+
+.cart-qty-input:focus {
+  outline: 0.15rem solid var(--mustard);
+  outline-offset: 0;
+  border-radius: var(--radius);
+}
+
+.cart-line-subtotal {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  min-width: 4rem;
+  text-align: right;
+}
+
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-4);
+  padding: var(--space-4);
+  background: var(--charcoal);
+  color: var(--bun-cream);
+  max-width: none;
+}
+
+.cart-total strong {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--mustard);
+}
+
+.cart-remove {
+  padding: 0.4rem 0.7rem;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  background: var(--bun-cream);
+  border: 0.1rem solid var(--line);
+  border-radius: var(--radius);
+}
+
+.cart-remove:hover,
+.cart-remove:focus {
+  border-color: var(--ketchup);
+  color: var(--ketchup);
+  outline: none;
+}
+
+@media (max-width: 40rem) {
+  .cart-line {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-tray-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cart-tray-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
 }
 
 /* ---------- Tablet breakpoint ---------- */
