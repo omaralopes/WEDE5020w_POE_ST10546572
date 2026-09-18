@@ -61,7 +61,7 @@ The website specifically caters to:
 
 **Promotions (promotions.html):** Current burger-and-chips specials with images, prices, Add to cart forms, and an Order now link.
 
-**Contact (contact.html):** Location details for 246 Currie Road, Morningside, embedded Google Map, Apple Maps and Google Maps links, Facebook link, and a contact enquiry form.
+**Contact (contact.html):** Location details for 246 Currie Road, Morningside, embedded Google Map, Apple Maps and Google Maps links, Facebook link, and a contact enquiry form. 
 
 **Order (order.html):** Customer details, menu selection, quantity, cart notes, and submit action for collection or delivery requests.
 
