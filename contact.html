@@ -2,16 +2,60 @@
 <html lang="en-ZA">
 <head>
     <meta charset="UTF-8">
-    <base href="./">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact The Burger Bar in Durban about orders and trading locations.">
-    <title>Contact | The Burger Bar</title>
+
+    <!-- SEO -->
+    <title>Contact &amp; Trading Locations in Durban | The Burger Bar</title>
+    <meta name="description" content="Contact The Burger Bar in Durban. Find our Morningside base at 246 Currie Road plus weekend trading spots on the interactive map, or send us a message.">
+    <meta name="keywords" content="contact The Burger Bar, 246 Currie Road Morningside, burger trading locations Durban, Umhlanga burgers, Essenwood Market burgers, North Beach food, halal burgers near me Durban">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="The Burger Bar">
+    <meta property="og:title" content="Contact &amp; Trading Locations | The Burger Bar Durban">
+    <meta property="og:description" content="Find The Burger Bar across Durban and send us a message.">
+    <meta property="og:url" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/contact.html">
+    <meta property="og:image" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/images/hero-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <!-- Leaflet (open-source interactive map library) loaded from the unpkg CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/the-burger-bar-logo.jpg" type="image/jpeg">
+
+    <!-- Structured data for local search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Burger Bar",
+      "url": "https://omaralopes.github.io/WEDE5020w_POE_ST10546572/",
+      "email": "hello@theburgerbardbn.co.za",
+      "servesCuisine": ["Burgers", "Halal"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "246 Currie Road, Morningside",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -29.8376, "longitude": 31.0062 },
+      "sameAs": ["https://www.facebook.com/theburgerbardbn"]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <!-- Site header and main navigation -->
     <header class="site-header">
         <div class="site-wrap">
@@ -23,6 +67,8 @@
                                 ./images/responsive/the-burger-bar-logo-800w.jpg 800w,
                                 ./images/the-burger-bar-logo.jpg 1024w"
                         sizes="48px"
+                        width="48"
+                        height="48"
                         alt="The Burger Bar logo">
                 </a>
                 <div class="brand-text">
@@ -36,70 +82,179 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Contact details and enquiry form -->
-    <main>
+    <!-- Contact details, interactive map, FAQ and message form -->
+    <main id="main" tabindex="-1">
         <div class="site-wrap page-intro">
             <h1>Contact us</h1>
-            <p>Have a question about the menu or a trading location? Send us a message.</p>
+            <p>Have a question about the menu or want to know where the grill is this weekend? Find us on the map or send us a message.</p>
         </div>
 
+        <!-- Interactive map with every trading location -->
+        <section class="site-wrap locations-section" id="locations" aria-labelledby="locations-heading">
+            <div class="section-heading">
+                <h2 id="locations-heading">Where to find the grill</h2>
+                <p>Our home base is 246 Currie Road in Morningside, and the mobile grill also trades at these Durban spots. Click a marker or a card for details and directions.</p>
+            </div>
+
+            <div class="map-toolbar">
+                <button type="button" class="btn btn-secondary" id="map-show-all">Show all locations</button>
+                <button type="button" class="btn btn-gold" id="map-nearest">Find my nearest spot</button>
+                <span id="map-nearest-note" class="map-note" aria-live="polite"></span>
+            </div>
+
+            <!-- Leaflet renders the map into this element (see js/script.js, section 7) -->
+            <div id="map" class="map-canvas" role="region" aria-label="Interactive map of The Burger Bar trading locations in Durban"></div>
+
+            <p class="map-links">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=246+Currie+Road+Morningside+Durban" rel="noopener noreferrer" target="_blank">Open home base in Google Maps</a>
+                <a href="https://maps.apple.com/?q=246+Currie+Road,+Morningside,+Durban" rel="noopener noreferrer" target="_blank">Open in Apple Maps</a>
+                <a href="https://www.facebook.com/theburgerbardbn" rel="noopener noreferrer" target="_blank">Weekly locations on Facebook</a>
+            </p>
+
+            <!-- Location cards are generated from the same data as the markers -->
+            <ul id="location-list" class="location-grid" aria-label="Trading locations"></ul>
+        </section>
+
         <div class="site-wrap contact-layout">
-            <!-- Business location and social links -->
-            <section>
-                <h2>Find us</h2>
-                <address>
-                    The Burger Bar<br>
-                    246 Currie Road<br>
-                    Morningside<br>
-                    Durban, KwaZulu-Natal
-                </address>
-                <p>Trading locations may vary. Follow our Facebook page for the latest updates.</p>
-                <div class="map-frame">
-                    <iframe
-                        src="https://maps.google.com/maps?q=246+Currie+Road,+Morningside,+Durban&amp;z=16&amp;output=embed"
-                        width="600"
-                        height="400"
-                        title="Map showing The Burger Bar at 246 Currie Road, Morningside, Durban"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        allowfullscreen>
-                    </iframe>
+            <!-- Frequently asked questions (JavaScript accordion) -->
+            <section aria-labelledby="faq-heading">
+                <h2 id="faq-heading">Frequently asked questions</h2>
+                <div class="accordion" data-accordion data-open-first>
+                    <div class="accordion-item faq-item">
+                        <h3 class="accordion-heading">
+                            <button type="button" class="accordion-trigger" id="faq-1-trigger" aria-expanded="false" aria-controls="faq-1">
+                                Is everything on the menu halal?
+                                <span class="accordion-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-1-trigger">
+                            <div class="accordion-panel-inner">
+                                <p>Yes. Every burger is prepared with halal-certified beef and chicken from trusted suppliers, and the grill station is kept consistent so families and halaal diners can order with confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-item">
+                        <h3 class="accordion-heading">
+                            <button type="button" class="accordion-trigger" id="faq-2-trigger" aria-expanded="false" aria-controls="faq-2">
+                                Where will the grill be this week?
+                                <span class="accordion-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-2-trigger">
+                            <div class="accordion-panel-inner">
+                                <p>246 Currie Road, Morningside, is our regular base from Tuesday to Sunday. Weekend spots such as Essenwood Market, Umhlanga Rocks and North Beach are shown on the map above and confirmed every week on our <a class="text-link" href="https://www.facebook.com/theburgerbardbn" rel="noopener noreferrer" target="_blank">Facebook page</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-item">
+                        <h3 class="accordion-heading">
+                            <button type="button" class="accordion-trigger" id="faq-3-trigger" aria-expanded="false" aria-controls="faq-3">
+                                Do you deliver?
+                                <span class="accordion-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-3-trigger">
+                            <div class="accordion-panel-inner">
+                                <p>Yes, within about 15 km of Morningside. Delivery is R35 and free on orders over R500. Choose Delivery at <a class="text-link" href="order.html">checkout</a> and enter your address.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-item">
+                        <h3 class="accordion-heading">
+                            <button type="button" class="accordion-trigger" id="faq-4-trigger" aria-expanded="false" aria-controls="faq-4">
+                                Can you cater for an event or a large order?
+                                <span class="accordion-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-4" role="region" aria-labelledby="faq-4-trigger">
+                            <div class="accordion-panel-inner">
+                                <p>Absolutely. Orders of 10 or more items get a bulk discount, and we can bring the grill to your event. Use the <a class="text-link" href="enquiry.html">enquiry form</a> for an instant estimate of cost and availability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-item">
+                        <h3 class="accordion-heading">
+                            <button type="button" class="accordion-trigger" id="faq-5-trigger" aria-expanded="false" aria-controls="faq-5">
+                                What about allergens?
+                                <span class="accordion-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-5" role="region" aria-labelledby="faq-5-trigger">
+                            <div class="accordion-panel-inner">
+                                <p>Our buns contain gluten and sesame, and several sauces contain egg and dairy. Tell the team about any allergy when you order, or add it to the notes at checkout, and we will advise what is safe.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="map-links">
-                    <a href="https://www.google.com/maps/search/?api=1&amp;query=246+Currie+Road+Morningside+Durban">Open in Google Maps</a>
-                    <a href="https://maps.apple.com/?q=246+Currie+Road,+Morningside,+Durban">Open in Apple Maps</a>
-                    <a href="https://www.facebook.com/theburgerbardbn">The Burger Bar on Facebook</a>
-                </p>
             </section>
 
-            <!-- General enquiry form -->
-            <section>
-                <form class="enquiry-form" action="#" method="post">
-                    <h2>Send an enquiry</h2>
-                    <p>
+            <!-- General message form: validated with JavaScript, then compiled into an email -->
+            <section aria-labelledby="contact-form-heading">
+                <form class="enquiry-form" id="contact-form" action="mailto:hello@theburgerbardbn.co.za" method="post" enctype="text/plain" novalidate>
+                    <h2 id="contact-form-heading">Send us a message</h2>
+                    <p class="form-help">All fields are required. We reply within one working day.</p>
+                    <p class="form-summary" role="alert" hidden></p>
+
+                    <!-- Honeypot: hidden from people, filled in by spam bots -->
+                    <p class="hp-field" aria-hidden="true">
+                        <label for="contact-website">Leave this field empty</label>
+                        <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+                    </p>
+
+                    <p data-field="contact-name">
                         <label for="contact-name">Name and surname</label>
-                        <input type="text" id="contact-name" name="contact-name" required>
+                        <input type="text" id="contact-name" name="contact-name" autocomplete="name" required minlength="2" maxlength="60">
                     </p>
-                    <p>
-                        <label for="contact-email">Email address</label>
-                        <input type="email" id="contact-email" name="contact-email" required>
+                    <div class="form-row">
+                        <p data-field="contact-email">
+                            <label for="contact-email">Email address</label>
+                            <input type="email" id="contact-email" name="contact-email" autocomplete="email" inputmode="email" required>
+                        </p>
+                        <p data-field="contact-phone">
+                            <label for="contact-phone">Phone number</label>
+                            <input type="tel" id="contact-phone" name="contact-phone" autocomplete="tel" inputmode="tel" placeholder="082 123 4567" required>
+                        </p>
+                    </div>
+                    <div class="form-row">
+                        <p data-field="contact-type">
+                            <label for="contact-type">Type of message</label>
+                            <select id="contact-type" name="contact-type" required>
+                                <option value="">Choose one…</option>
+                                <option value="General question">General question</option>
+                                <option value="Order query">Question about an order</option>
+                                <option value="Trading location request">Bring the grill to my area</option>
+                                <option value="Feedback">Feedback or compliment</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Media or partnership">Media or partnership</option>
+                            </select>
+                        </p>
+                        <p data-field="contact-subject">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="contact-subject" required minlength="4" maxlength="80">
+                        </p>
+                    </div>
+                    <p data-field="contact-message">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="7" required minlength="20" maxlength="1000" aria-describedby="contact-message-count"></textarea>
+                        <span id="contact-message-count" class="field-hint">0 / 1000 characters</span>
                     </p>
-                    <p>
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                    <p class="checkbox-field" data-field="contact-consent">
+                        <input type="checkbox" id="contact-consent" name="contact-consent" required>
+                        <label for="contact-consent">I agree that The Burger Bar may contact me about this message.</label>
                     </p>
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="7" cols="50" required></textarea>
-                    </p>
-                    <p><button type="submit">Submit</button></p>
+                    <p><button type="submit" class="btn">Send message</button></p>
+                    <p class="form-help">Pressing Send opens your email app with the message addressed to <strong>hello@theburgerbardbn.co.za</strong>, ready for you to send.</p>
                 </form>
+
+                <!-- Confirmation panel filled in by script.js after a valid submission -->
+                <section id="contact-result" class="response-panel" tabindex="-1" aria-live="polite" hidden></section>
             </section>
         </div>
     </main>
@@ -109,13 +264,20 @@
         <div class="site-wrap">
             <div>
                 <h2>The Burger Bar</h2>
-                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal, 4001</address>
+                <p>Tuesday to Sunday, 11:00–20:00 · <a href="mailto:hello@theburgerbardbn.co.za">hello@theburgerbardbn.co.za</a></p>
             </div>
             <div>
-                <p><a href="index.html">Back to home</a> | <a href="https://www.facebook.com/theburgerbardbn">Facebook</a></p>
-                <p class="footer-meta">&copy; 2026 The Burger Bar. All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <p><a href="index.html">Home</a> | <a href="menu.html">Menu</a> | <a href="enquiry.html">Enquiry</a> | <a href="https://www.facebook.com/theburgerbardbn" rel="noopener noreferrer" target="_blank">Facebook</a></p>
+                </nav>
+                <p class="footer-meta">&copy; <span data-year>2026</span> The Burger Bar. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Leaflet library, then the single site script (defer keeps the order) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>

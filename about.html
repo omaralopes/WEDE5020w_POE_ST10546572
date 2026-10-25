@@ -2,16 +2,36 @@
 <html lang="en-ZA">
 <head>
     <meta charset="UTF-8">
-    <base href="./">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about The Burger Bar's Durban roots, halal identity, team and smash-burger mission.">
-    <title>About Us | The Burger Bar</title>
+
+    <!-- SEO -->
+    <title>About Us: Durban's Halal Smash Burger Crew | The Burger Bar</title>
+    <meta name="description" content="Meet The Burger Bar: a Durban mobile eatery serving halal American-style smash burgers since 2016. Our story, mission, halal preparation and the team behind the grill.">
+    <meta name="keywords" content="about The Burger Bar, halal burger Durban history, smash burger team Durban, Amber Smith Abel Khan, mobile eatery Morningside, halal preparation burgers">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="The Burger Bar">
+    <meta property="og:title" content="About Us | The Burger Bar Durban">
+    <meta property="og:description" content="Durban's halal smash-burger crew: our story, mission and team.">
+    <meta property="og:url" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/about.html">
+    <meta property="og:image" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/images/owners.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/the-burger-bar-logo.jpg" type="image/jpeg">
 </head>
-<body> 
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <!-- Site header and main navigation -->
     <header class="site-header">
         <div class="site-wrap">
@@ -23,6 +43,8 @@
                                 ./images/responsive/the-burger-bar-logo-800w.jpg 800w,
                                 ./images/the-burger-bar-logo.jpg 1024w"
                         sizes="48px"
+                        width="48"
+                        height="48"
                         alt="The Burger Bar logo">
                 </a>
                 <div class="brand-text">
@@ -36,6 +58,7 @@
                     <li><a href="about.html" aria-current="page">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -43,7 +66,7 @@
     </header>
 
     <!-- About page content -->
-    <main>
+    <main id="main" tabindex="-1">
         <div class="site-wrap page-intro">
             <h1>About us</h1>
             <p>The story of how The Burger Bar came to be, and the people who keep the grill going in Durban.</p>
@@ -89,15 +112,18 @@
 
             <div class="team-grid">
                 <article class="team-card">
-                    <img
-                        src="./images/owners.jpg"
-                        srcset="./images/responsive/owners-480w.jpg 480w,
-                                ./images/responsive/owners-800w.jpg 800w,
-                                ./images/owners.jpg 1024w"
-                        sizes="(max-width: 48rem) 100vw, 50vw"
-                        alt="The Burger Bar owners Amber Smith and Abel Khan"
-                        width="1024"
-                        height="683">
+                    <!-- Team photos open in the lightbox (data-lightbox-src) -->
+                    <button type="button" class="team-photo" data-lightbox-group="team" data-lightbox-src="./images/owners.jpg" data-lightbox-caption="Owners Amber Smith and Abel Khan" aria-label="View a larger photo of the owners">
+                        <img
+                            src="./images/owners.jpg"
+                            srcset="./images/responsive/owners-480w.jpg 480w,
+                                    ./images/responsive/owners-800w.jpg 800w,
+                                    ./images/owners.jpg 1024w"
+                            sizes="(max-width: 48rem) 100vw, 50vw"
+                            alt="The Burger Bar owners Amber Smith and Abel Khan"
+                            width="1024"
+                            height="683">
+                    </button>
                     <div class="team-card-body">
                         <h3>Owners</h3>
                         <div class="team-member">
@@ -112,15 +138,17 @@
                 </article>
 
                 <article class="team-card">
-                    <img
-                        src="./images/staff.jpg"
-                        srcset="./images/responsive/staff-480w.jpg 480w,
-                                ./images/responsive/staff-800w.jpg 800w,
-                                ./images/staff.jpg 1024w"
-                        sizes="(max-width: 48rem) 100vw, 50vw"
-                        alt="The Burger Bar kitchen staff in chef jackets, smiling in a professional kitchen"
-                        width="1024"
-                        height="683">
+                    <button type="button" class="team-photo" data-lightbox-group="team" data-lightbox-src="./images/staff.jpg" data-lightbox-caption="The Burger Bar kitchen crew" aria-label="View a larger photo of the staff">
+                        <img
+                            src="./images/staff.jpg"
+                            srcset="./images/responsive/staff-480w.jpg 480w,
+                                    ./images/responsive/staff-800w.jpg 800w,
+                                    ./images/staff.jpg 1024w"
+                            sizes="(max-width: 48rem) 100vw, 50vw"
+                            alt="The Burger Bar kitchen staff in chef jackets, smiling in a professional kitchen"
+                            width="1024"
+                            height="683">
+                    </button>
                     <div class="team-card-body">
                         <h3>Staff</h3>
                         <div class="team-member">
@@ -146,13 +174,18 @@
         <div class="site-wrap">
             <div>
                 <h2>The Burger Bar</h2>
-                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal, 4001</address>
+                <p>Tuesday to Sunday, 11:00–20:00</p>
             </div>
             <div>
-                <p><a href="https://www.facebook.com/theburgerbardbn">Follow us on Facebook</a></p>
-                <p class="footer-meta">&copy; 2026 The Burger Bar. All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <p><a href="menu.html">Menu</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact us</a> | <a href="https://www.facebook.com/theburgerbardbn" rel="noopener noreferrer" target="_blank">Follow us on Facebook</a></p>
+                </nav>
+                <p class="footer-meta">&copy; <span data-year>2026</span> The Burger Bar. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js" defer></script>
 </body>
 </html>

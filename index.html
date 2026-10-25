@@ -2,16 +2,71 @@
 <html lang="en-ZA">
 <head>
     <meta charset="UTF-8">
-    <base href="./">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Burger Bar serves halal American-inspired smash burgers in Durban and surrounding communities.">
-    <title>The Burger Bar | Durban Smash Burgers</title>
+
+    <!-- SEO: title, description and keywords for the homepage -->
+    <title>Halal Smash Burgers in Durban | The Burger Bar</title>
+    <meta name="description" content="The Burger Bar serves halal American-style smash burgers, loaded sides and mocktails in Durban. View the menu, order online for collection or delivery in Morningside.">
+    <meta name="keywords" content="halal smash burgers Durban, burger Morningside, Currie Road burgers, order burgers online Durban, halal burger Durban, mobile burger eatery KwaZulu-Natal">
+    <meta name="author" content="The Burger Bar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/index.html">
+
+    <!-- Social sharing (Open Graph / Twitter cards) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="The Burger Bar">
+    <meta property="og:title" content="Halal Smash Burgers in Durban | The Burger Bar">
+    <meta property="og:description" content="Fresh, halal, American-style smash burgers made to order and taken to the people of Durban.">
+    <meta property="og:url" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/index.html">
+    <meta property="og:image" content="https://omaralopes.github.io/WEDE5020w_POE_ST10546572/images/hero-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Security: content security policy and referrer policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://unpkg.com https://*.tile.openstreetmap.org; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Fonts and stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/the-burger-bar-logo.jpg" type="image/jpeg">
+
+    <!-- Structured data (schema.org) helps search engines show rich local results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Burger Bar",
+      "url": "https://omaralopes.github.io/WEDE5020w_POE_ST10546572/",
+      "image": "https://omaralopes.github.io/WEDE5020w_POE_ST10546572/images/hero-image.jpg",
+      "servesCuisine": ["Burgers", "American", "Halal"],
+      "priceRange": "R18 - R139",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "246 Currie Road, Morningside",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -29.8376, "longitude": 31.0062 },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "20:00"
+      },
+      "sameAs": ["https://www.facebook.com/theburgerbardbn"],
+      "hasMenu": "https://omaralopes.github.io/WEDE5020w_POE_ST10546572/menu.html"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip link for keyboard and screen-reader users -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <!-- Site header and main navigation -->
     <header class="site-header">
         <div class="site-wrap">
@@ -23,6 +78,8 @@
                                 ./images/responsive/the-burger-bar-logo-800w.jpg 800w,
                                 ./images/the-burger-bar-logo.jpg 1024w"
                         sizes="48px"
+                        width="48"
+                        height="48"
                         alt="The Burger Bar logo">
                 </a>
                 <div class="brand-text">
@@ -36,6 +93,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -43,7 +101,7 @@
     </header>
 
     <!-- Homepage content and calls to action -->
-    <main>
+    <main id="main" tabindex="-1">
         <!-- Hero introduction: full-bleed image with brand headline -->
         <section class="hero">
             <div class="hero-media">
@@ -60,9 +118,10 @@
                                 ./images/responsive/hero-image-800w.jpg 800w,
                                 ./images/hero-image.jpg 1024w"
                         sizes="100vw"
-                        alt="A stacked cheeseburger with lettuce, tomato and sesame bun"
+                        alt="A stacked halal smash cheeseburger with lettuce, tomato and sesame bun from The Burger Bar in Durban"
                         width="1024"
-                        height="682">
+                        height="682"
+                        fetchpriority="high">
                 </picture>
             </div>
             <div class="hero-content">
@@ -81,12 +140,39 @@
             <div class="site-wrap">
                 <div>
                     <h2>Find your next favourite</h2>
-                    <p>From classic smash burgers to loaded sides and cold drinks, there is something for every Durban craving.</p>
+                    <p>From classic smash burgers to loaded sides and cold drinks, there is something for every Durban craving. Search and filter the full menu, then add to your cart in a tap.</p>
                 </div>
                 <ul class="category-list">
                     <li><a href="menu.html#burgers">Smash burgers</a></li>
                     <li><a href="menu.html#sides">Sides and sauces</a></li>
-                    <li><a href="menu.html#drinks">Drinks</a></li>
+                    <li><a href="menu.html#drinks">Drinks and mocktails</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Photo gallery: each tile opens in the JavaScript lightbox -->
+        <section class="gallery-section" aria-labelledby="gallery-heading">
+            <div class="site-wrap">
+                <div class="section-heading">
+                    <h2 id="gallery-heading">Fresh off the grill</h2>
+                    <p>A taste of what comes off the smash station. Tap any photo to see it larger.</p>
+                </div>
+                <ul class="gallery-grid">
+                    <li class="gallery-item">
+                        <button type="button" data-lightbox-group="home" data-lightbox-src="./images/stacked-beef-burger.jpg" data-lightbox-caption="Stacked Beef Burger – built for the serious appetite">
+                            <img src="./images/responsive/stacked-beef-burger-480w.jpg" srcset="./images/responsive/stacked-beef-burger-480w.jpg 480w, ./images/responsive/stacked-beef-burger-800w.jpg 800w" sizes="(max-width: 48rem) 100vw, 33vw" alt="Tall stacked double beef burger with cheese, salad and chips" loading="lazy" width="480" height="720">
+                        </button>
+                    </li>
+                    <li class="gallery-item">
+                        <button type="button" data-lightbox-group="home" data-lightbox-src="./images/charcoal-beef-and-macon-cheeseburger.jpg" data-lightbox-caption="Charcoal Beef &amp; Macon Cheeseburger on a black activated charcoal bun">
+                            <img src="./images/responsive/charcoal-beef-and-macon-cheeseburger-480w.jpg" srcset="./images/responsive/charcoal-beef-and-macon-cheeseburger-480w.jpg 480w, ./images/responsive/charcoal-beef-and-macon-cheeseburger-800w.jpg 800w" sizes="(max-width: 48rem) 100vw, 33vw" alt="Charcoal bun beef cheeseburger with macon and chips" loading="lazy" width="480" height="320">
+                        </button>
+                    </li>
+                    <li class="gallery-item">
+                        <button type="button" data-lightbox-group="home" data-lightbox-src="./images/sweet-and-spicy-chicken-burger.jpg" data-lightbox-caption="Sweet &amp; Spicy Chicken Burger with fries">
+                            <img src="./images/responsive/sweet-and-spicy-chicken-burger-480w.jpg" srcset="./images/responsive/sweet-and-spicy-chicken-burger-480w.jpg 480w, ./images/responsive/sweet-and-spicy-chicken-burger-800w.jpg 800w" sizes="(max-width: 48rem) 100vw, 33vw" alt="Sweet and spicy chicken burger served with fries" loading="lazy" width="480" height="320">
+                        </button>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -96,9 +182,30 @@
             <div class="site-wrap">
                 <div>
                     <h2>What's happening on the grill?</h2>
-                    <p>Keep an eye on our latest specials and trading locations.</p>
+                    <p>Keep an eye on our latest specials and trading locations across Durban.</p>
                 </div>
                 <a class="btn btn-gold" href="promotions.html">See current promotions</a>
+            </div>
+        </section>
+
+        <!-- Enquiry and contact shortcuts (internal linking) -->
+        <section class="home-links">
+            <div class="site-wrap home-links-grid">
+                <article class="about-card">
+                    <h3>Feeding a crowd?</h3>
+                    <p>Get an instant cost and availability estimate for bulk orders, catering or a trading visit to your area.</p>
+                    <a class="text-link" href="enquiry.html">Send an enquiry</a>
+                </article>
+                <article class="about-card">
+                    <h3>Where is the grill today?</h3>
+                    <p>See all our Durban trading spots on the interactive map and get directions.</p>
+                    <a class="text-link" href="contact.html#locations">Find us</a>
+                </article>
+                <article class="about-card">
+                    <h3>Who we are</h3>
+                    <p>Halal from day one. Meet the owners and the crew behind the smash.</p>
+                    <a class="text-link" href="about.html">About The Burger Bar</a>
+                </article>
             </div>
         </section>
     </main>
@@ -108,13 +215,19 @@
         <div class="site-wrap">
             <div>
                 <h2>Visit The Burger Bar</h2>
-                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal</address>
+                <address>246 Currie Road, Morningside, Durban, KwaZulu-Natal, 4001</address>
+                <p>Tuesday to Sunday, 11:00–20:00</p>
             </div>
             <div>
-                <p><a href="https://www.facebook.com/theburgerbardbn">Facebook</a> | <a href="contact.html">Contact details</a></p>
-                <p class="footer-meta">&copy; 2026 The Burger Bar. All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <p><a href="menu.html">Menu</a> | <a href="promotions.html">Promotions</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a> | <a href="https://www.facebook.com/theburgerbardbn" rel="noopener noreferrer" target="_blank">Facebook</a></p>
+                </nav>
+                <p class="footer-meta">&copy; <span data-year>2026</span> The Burger Bar. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Single site script: cart, menu, lightbox, forms, map -->
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
