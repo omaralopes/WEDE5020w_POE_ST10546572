@@ -1,0 +1,11 @@
+# The Burger Bar — robots.txt
+# Tells search engine crawlers which pages may be indexed.
+
+User-agent: *
+Allow: /
+
+# The checkout page is personal to each visitor and should not appear in search results.
+Disallow: /order.html
+
+# Location of the XML sitemap
+Sitemap: https://omaralopes.github.io/WEDE5020w_POE_ST10546572/sitemap.xml
