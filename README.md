@@ -353,7 +353,7 @@ Update README with Part 3 details, changelog and references
 
 **v2.13 - 18 Sep 2026:** Added `js/cart.js` and linked it from `menu.html`, `promotions.html` and `order.html` to power stay-on-page cart updates, checkout quantity editing and live total calculations.
 
-### Part 2 feedback corrections (applied during Part 3)
+### Changes made from Part 2
 
 **v2.14 - 25 Oct 2026:** Fixed the duplicate `border-top` declaration on `.about-card` in `css/style.css` and removed the decorative coloured accent lines (header underline, card top and left borders) so cards, notes and panels use a single consistent neutral border.
 
@@ -391,7 +391,7 @@ Update README with Part 3 details, changelog and references
 
 **v3.12 - 25 Oct 2026:** Simplified the JavaScript for readability (plain functions, `const`/`let`, template literals, single-line comments), reduced the home page gallery to three burger photos, and removed the coloured accent lines from the design.
 
-**v3.13 - 25 Oct 2026:** Updated the README with Part 3 details, Part 2 feedback corrections, deployment instructions, the updated sitemap and file structure, and new references; pushed all commits to GitHub and deployed on GitHub Pages.
+**v3.13 - 25 Oct 2026:** Updated the README with Part 3 details, changes made from Part 2, deployment instructions, the updated sitemap and file structure, and new references.
 
 ## References
 
