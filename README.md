@@ -271,18 +271,6 @@ Home (index.html)
 	└── Facebook link
 ```
 
-## GitHub Repository
-
-Commits use descriptive messages, for example:
-
-```text
-Add Part 2 external stylesheet and link all pages
-Implement responsive Grid and Flexbox layouts
-Add single script.js with dynamic menu, cart, lightbox, forms and map
-Add SEO files: robots.txt, sitemap.xml, meta tags and 404 page
-Update README with Part 3 details, changelog and references
-```
-
 ## Detailed Changelog
 
 ### Part 1
